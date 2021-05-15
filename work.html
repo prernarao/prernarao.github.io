@@ -23,6 +23,9 @@
             </a>
         </div>
         <div class="headerIcons-div" id="headerIcons">
+            <a href="about.html" class="pageLinks" title="About Me">
+                About
+            </a>
             <a href="https://www.linkedin.com/in/prernaraov/" class="socialIcons" title="Resume">
                 <i class="fa fa-id-badge fa-2xs"></i>
             </a>
@@ -32,22 +35,38 @@
             <a href="https://github.com/prernarao" class="socialIcons" title="Github">
                 <i class="fa fa-github fa-xs"></i>
             </a>
-            <!-- <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+            <a href="javascript:void(0);" class="hamburger" onclick="openMenu()">
                 <i class="fa fa-bars"></i>
-            </a> -->
+            </a>
         </div>
     </div>
-    <div class="content" style="display:block;text-align: center;">
+    <div id="hamburgerMenu" class="hamburgerMenu">
+        <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
+        <div class="menu-content">
+            <a href="about.html" class="github" title="About Me">
+                About Me
+            </a>
+            <a href="https://www.linkedin.com/in/prernaraov/" class="resume" title="Resume">
+                <i class="fa fa-id-badge fa-xs"></i> Resume
+            </a>
+            <a href="https://www.linkedin.com/in/prernaraov/" class="linkedin" title="LinkedIn">
+                <i class="fa fa-linkedin fa-xs"></i> LinkedIn
+            </a>
+            <a href="https://github.com/prernarao" class="github" title="Github">
+                <i class="fa fa-github fa-xs"></i> GitHub
+            </a>
+        </div>
+    </div>
+    <div class="content" style="display:block;text-align: center;" onclick="closeMenu()">
         <h2>This page is under construction :)</h2>
     </div>
     <script>
-        function myFunction() {
-            var x = document.getElementById("headerIcons");
-            if (x.className === "headerIcons-div") {
-                x.className += " responsive";
-            } else {
-                x.className = "headerIcons-div";
-            }
+        function openMenu() {
+            document.getElementById("hamburgerMenu").style.width = "40%";
+        }
+
+        function closeMenu() {
+            document.getElementById("hamburgerMenu").style.width = "0%";
         }
     </script>
 </body>
