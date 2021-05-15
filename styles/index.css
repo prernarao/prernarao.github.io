@@ -44,8 +44,8 @@ body {
 }
 
 .headerIcons-div .hamburger:hover {
-    color: black;
-    background-color: wheat;
+    color: white;
+    background: black;
     border-radius: 3px;
     padding: 5px;
 }
@@ -58,7 +58,7 @@ body {
 }
 
 .headerIcons-div .socialIcons:hover {
-    color: white;
+    color: green;
     transition: color .2s ease-in-out;
     border-bottom: none;
 }
@@ -72,12 +72,9 @@ body {
     flex-grow: 2;
     padding: 10% 0 0 3%;
     max-width: 50%;
+    min-width: 50%;
     font-weight: 600;
     font-size: 1.3rem;
-    /* margin: auto; */
-    /* background: rgb(236, 210, 59); */
-    /* background: #210440; */
-    /* background-image: linear-gradient(to bottom right, rgb(243, 99, 147), rgb(236, 210, 59)); */
     color: black;
     text-align: center;
 }
@@ -94,10 +91,10 @@ body {
 }
 
 .content .pageLinks:hover {
-    background: wheat;
+    background: black;
     border-style: solid;
     border-color: black;
-    color: black;
+    color: white;
     transition: background .2s ease-in-out;
 }
 
@@ -108,9 +105,9 @@ body {
 
 
 @media screen and (max-width: 760px) {
-    /* .headerIcons-div a {
+    .headerIcons-div a {
         display: none;
-    } */
+    }
 
     .headerIcons-div a.hamburger {
         float: right;
@@ -120,13 +117,18 @@ body {
         top: 6%;
         right: 5%;
         display: block;
-        /* display: flex;
-        justify-content: flex-end; */
     }
 
     .content {
-        display: inline;
+        display: flex;
+        flex-direction: column;
     }
+
+    .content .intro-div {
+        min-width: 100%;
+        padding-bottom: 0.5rem;
+    }
+
 }
 
 @media screen and (max-width: 760px) {
