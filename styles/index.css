@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Slab");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,350,400,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,300");
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Josefin+Slab:wght@500&display=swap');
+
+body {
+    font-family: "Josefin Slab", Georgia, sans-serif;
+    margin: 0;
+    /* background: #465c8b; */
+    background: whitesmoke;
+    /* background-image: linear-gradient(to bottom right, rgb(181, 37, 224), rgb(236, 210, 59)); */
+}
+
+.header {
+    padding: 25px 25px 0px 20px;
+    height: 10%;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-div a{
+    font-family: "Josefin Slab", Georgia, sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+    vertical-align: middle;
+}
+
+.header .headerIcons-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:  center;
+    /* width: 10%; */
+    min-width: 150px;
+    font-size: 20px;
+}
+
+.headerIcons-div .hamburger {
+    display: none;
+}
+
+.headerIcons-div .hamburger:hover {
+    color: black;
+    background-color: wheat;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.headerIcons-div .socialIcons {
+    position: "relative";
+    color: black;
+    size: "20px !important";
+    margin-right: "4px";
+}
+
+.headerIcons-div .socialIcons:hover {
+    color: white;
+    transition: color .2s ease-in-out;
+    border-bottom: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .intro-div {
+    flex-grow: 2;
+    padding: 10% 0 0 3%;
+    max-width: 50%;
+    font-weight: 600;
+    font-size: 1.3rem;
+    /* margin: auto; */
+    /* background: rgb(236, 210, 59); */
+    /* background: #210440; */
+    /* background-image: linear-gradient(to bottom right, rgb(243, 99, 147), rgb(236, 210, 59)); */
+    color: black;
+    text-align: center;
+}
+
+.content .pageLinks {
+    /* font-size: 60%; */
+    /* background: black; */
+    padding: 7px 6px 4px 6px;
+    border-radius: 3px;
+    color: black;
+    border-style: solid;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.content .pageLinks:hover {
+    background: wheat;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    transition: background .2s ease-in-out;
+}
+
+.comic {
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 760px) {
+    /* .headerIcons-div a {
+        display: none;
+    } */
+
+    .headerIcons-div a.hamburger {
+        float: right;
+        color: black;
+        padding: 5px;
+        position: absolute;
+        top: 6%;
+        right: 5%;
+        display: block;
+        /* display: flex;
+        justify-content: flex-end; */
+    }
+
+    .content {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .headerIcons-div.responsive {
+        position: relative;
+        padding-right: 30px;
+        margin: 20px;
+    }
+
+    .headerIcons-div.responsive .hamburger {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .headerIcons-div.responsive .socialIcons {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+}
