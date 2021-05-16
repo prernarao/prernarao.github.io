@@ -6,7 +6,7 @@
     </title>
     <link rel="shortcut icon" href="images/favicon-pr.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/index.css" type="text/css">
+    <link rel="stylesheet" href="styles/work.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 </head>
@@ -57,8 +57,76 @@
             </a>
         </div>
     </div>
-    <div class="content" style="display:block;text-align: center;" onclick="closeMenu()">
-        <h2>This page is under construction :)</h2>
+    <div class="gallery" id="gallery" onclick="closeMenu()">
+        <h3 onclick="showGrid()" id="backToGrid">This page is still under construction :)</h3>
+        <div class="image-grid" id="image-grid">
+            <div class="column">
+                <img src="images/Placeholders/SE-2.png" id="html" style="width:100%" onclick="hideGrid(this)">
+                <img src="images/Placeholders/bg.jpg" id="se" style="width:100%" onclick="hideGrid(this)">
+            </div>
+            <div class="column">
+                <img src="images/Placeholders/bg2.jpg" id="ibr" style="width:100%" onclick="hideGrid(this)">
+                <img src="images/Placeholders/SE-3.png" id="kyc" style="width:100%" onclick="hideGrid(this)">
+            </div>
+            <div class="column">
+                <!-- <img src="images/Work/SE-5.png" id="zfp" style="width:100%" onclick="hideGrid(this)"> -->
+            </div>
+        </div>
+        <div class="projectInfo-div" id="html-info">HTML&nbsp;&nbsp;(There's a little more progress on the second project's page)</div>
+        <div class="projectInfo-div" id="zfp-info">ZFP&nbsp;&nbsp;(There's a little more progress on the second project's page)</div>
+        <div class="projectInfo-div" id="kyc-info">KYC&nbsp;&nbsp;(There's a little more progress on the second project's page)</div>
+        <div class="projectInfo-div" id="ibr-info">
+            <div class="info-div">
+                <div class="left-div">
+                    <div class="title">
+                        <h2>IBR</h2>&nbsp;&nbsp;&nbsp;Internship &middot; Fullstack Development
+                    </div>
+                    <div>
+                        <h3>Description</h3>
+                        A brief intoduction to this project.
+                    </div>
+                </div>
+                <div class="right-div">
+                    <p><b>Project Context: </b>What kind of project it was.</p><br />
+                    <p><b>Roles & Responsibilities: </b>How I contributed.</p><br />
+                    <p><b>Tools/Methods Used: </b>What I used to build it.</p>
+                </div>
+            </div>
+            <div>
+                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
+            </div>
+            <div class="slideshow">
+                <div class="images-container">
+                    <div class="mySlides fade">
+                        <img src="images/Placeholders/bg.jpg" style="width:100%">
+                        <div class="text">Caption One</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/Placeholders/bg2.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/Placeholders/bg3.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="projectInfo-div" id="se-info">SE&nbsp;&nbsp;(There's a little more progress on the second project's page)</div>
+    </div>
     </div>
     <script>
         function openMenu() {
@@ -68,6 +136,52 @@
         function closeMenu() {
             document.getElementById("hamburgerMenu").style.width = "0%";
         }
+
+        function hideGrid(element) {
+            document.getElementById("image-grid").style.display = "none";
+            var elementID = element.id + "-info";
+            document.getElementById(elementID).style.display = "block";
+            document.getElementById("backToGrid").innerText = "Go back to all projects";
+        }
+
+        function showGrid() {
+            document.getElementById("image-grid").style.display = "flex";
+            document.getElementById("backToGrid").innerText = "This page is under construction :)";
+
+            document.getElementById("html-info").style.display = "none";
+            document.getElementById("kyc-info").style.display = "none";
+            document.getElementById("zfp-info").style.display = "none";
+            document.getElementById("ibr-info").style.display = "none";
+            document.getElementById("se-info").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
     </script>
 </body>
 
