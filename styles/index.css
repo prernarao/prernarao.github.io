@@ -54,9 +54,10 @@ body {
 }
 
 .header .pageLinks:hover {
-    background: black;
-    color: white;
+    /* background: black; */
+    /* color: white; */
     transition: background .2s ease-in-out;
+    border-bottom: 1.5px solid rgb(26, 26, 26);
 }
 
 .headerIcons-div .hamburger {
@@ -74,13 +75,19 @@ body {
     position: "relative";
     color: black;
     size: "20px !important";
-    margin-right: "4px";
+    margin-right: 4px;
+    padding: 4px;
 }
 
 .headerIcons-div .socialIcons:hover {
-    color: green;
+    /* color: whitesmoke; */
+    /* border-color: rgb(26, 26, 26);
+    border-style:solid;
+    border-width: 1.5px; */
+    size: 30px;
     transition: color .2s ease-in-out;
-    border-bottom: none;
+    border-bottom: 1.5px solid rgb(26, 26, 26);
+    /* border-radius: 20%; */
 }
 
 .content {
@@ -114,10 +121,10 @@ body {
 }
 
 .content .pageLinks:hover {
-    background: black;
+    background: rgb(26, 26, 26);
     border-style: solid;
     border-color: black;
-    color: white;
+    color: whitesmoke;
     transition: background .2s ease-in-out;
 }
 

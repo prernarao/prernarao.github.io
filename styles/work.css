@@ -47,16 +47,17 @@ body {
 }
 
 .header .pageLinks {
-    padding: 7px 6px 4px 6px;
+    padding: 7px 6px 2px 6px;
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
 .header .pageLinks:hover {
-    background: black;
-    color: white;
+    /* background: black;
+    color: white; */
     transition: background .2s ease-in-out;
+    border-bottom: 1.5px solid rgb(26, 26, 26);
 }
 
 .headerIcons-div .hamburger {
@@ -74,13 +75,14 @@ body {
     position: "relative";
     color: black;
     size: "20px !important";
-    margin-right: "4px";
+    margin-right: 4px;
+    padding: 4px;
 }
 
 .headerIcons-div .socialIcons:hover {
-    color: green;
+    /* color: green; */
     transition: color .2s ease-in-out;
-    border-bottom: none;
+    border-bottom: 1.5px solid rgb(26, 26, 26);
 }
 
 .hamburgerMenu {
@@ -182,10 +184,10 @@ body {
     transition: filter .1s ease-in-out;
   }
 
-  .mySlides {display: none}
+  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
 
   .images-container {
-    max-width: 80%;
+    max-width: 50%;
     position: relative;
     margin: auto;
   }
