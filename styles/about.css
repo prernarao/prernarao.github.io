@@ -4,9 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Josefin+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 
 body {
     font-family: "Josefin Slab", Georgia, sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
     margin: 0;
     /* background: #465c8b; */
     background: whitesmoke;
@@ -20,30 +23,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.gehc {
-    text-decoration: none;
-    color: rgb(21, 143, 21);
-    /* color: rgb(6, 101, 179); */
-}
-
-.sitara {
-    text-decoration: none;
-    color: rgb(57, 16, 148);
-}
-
-.footer {
-    position: absolute;
-    padding: 15px;
-    left: 0px;
-    right: 0px;
-    text-align: center;
-    line-height: 1.6;
-}
-
-.heart {
-    color: rgba(0, 105, 0, 0.651);
 }
 
 .name-div a{
@@ -71,15 +50,15 @@ body {
 }
 
 .header .pageLinks {
-    padding: 7px 6px 4px 6px;
+    padding: 7px 6px 2px 6px;
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
 .header .pageLinks:hover {
-    /* background: black; */
-    /* color: white; */
+    /* background: black;
+    color: white; */
     transition: background .2s ease-in-out;
     border-bottom: 1.5px solid rgb(26, 26, 26);
 }
@@ -104,56 +83,9 @@ body {
 }
 
 .headerIcons-div .socialIcons:hover {
-    /* color: whitesmoke; */
-    /* border-color: rgb(26, 26, 26);
-    border-style:solid;
-    border-width: 1.5px; */
-    size: 30px;
+    /* color: green; */
     transition: color .2s ease-in-out;
     border-bottom: 1.5px solid rgb(26, 26, 26);
-    /* border-radius: 20%; */
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.content .intro-div {
-    flex-grow: 2;
-    padding: 7% 0 0 3%;
-    /* margin: 0 1rem 0 0; */
-    line-height: 1.6;
-    max-width: 45%;
-    min-width: 45%;
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: black;
-    text-align: justify;
-}
-
-.content .buttons {
-    margin-top: -10px;
-}
-.content .pageLinks {
-    padding: 7px 6px 4px 6px;
-    border-radius: 3px;
-    color: black;
-    border-style: solid;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.content .pageLinks:hover {
-    background: rgb(26, 26, 26);
-    border-style: solid;
-    border-color: black;
-    color: whitesmoke;
-    transition: background .2s ease-in-out;
-}
-
-.comic {
-    width: 100%;
 }
 
 .hamburgerMenu {
@@ -206,6 +138,44 @@ body {
     right: 10%;
 }
 
+.content {
+    display: flex;
+    padding: 6%;
+    /* margin: auto; */
+    justify-content: space-between;
+}
+
+.content .about-img {
+    width:30%;
+    height: 100%;
+}
+
+.content .about-content {
+    font-family: 'Rubik', sans-serif;
+    max-width: 62%;
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 1.6;
+    min-width: 50%;
+    /* font-weight: 600; */
+    /* font-size: 1.3rem; */
+    color: black;
+    text-align: justify;
+}
+
+.footer {
+    position: absolute;
+    padding: 15px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.heart {
+    color: rgba(240, 16, 102, 0.651);
+}
+
 @media screen and (max-width: 760px) {
     .headerIcons-div a {
         display: none;
@@ -222,16 +192,18 @@ body {
     }
 
     .content {
-        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .content .intro-div {
-        min-width: 80%;
-        padding-bottom: 0.5rem;
-        align-self: center;
+    .content .about-img {
+        width: 65%;
+        margin: 1.5em;
     }
 
+    .content .about-content {
+        max-width: 85%;
+    }
 }
 
 @media screen and (max-width: 760px) {
