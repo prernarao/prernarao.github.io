@@ -211,7 +211,7 @@ body {
 }
 
 .content .about-img {
-    width:30%;
+    width: 40%;
     height: 100%;
 }
 
@@ -249,11 +249,11 @@ body {
 }
 
 .heart {
-    color: rgba(240, 16, 102, 0.651);
+    color: rgba(67, 36, 206, 0.829);
 }
 
 .heart-dark {
-    color: rgb(238, 102, 154);
+    color: rgb(102, 172, 238);
 }
 
 @media screen and (max-width: 760px) {
