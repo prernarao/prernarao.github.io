@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
 
+    <script src="js/work.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-062204VTT0"></script>
     <script>
@@ -25,27 +26,31 @@
 
 </style>
 
-<body>
+<body class="body-light">
     <div class="header">
-        <div class="name-div">
+        <div class="name-light">
             <a href="index.html">
                 <b>Prerna</b> Rao
             </a>
         </div>
         <div class="headerIcons-div" id="headerIcons">
-            <a href="about.html" class="pageLinks" title="About Me">
+            <a href="about.html" class="pageLinks-light" title="About Me">
                 About
             </a>
             <!-- <a href="docs/CV.pdf" class="socialIcons" target="_blank" rel="noreferrer noopener" title="Resume">
                 <i class="fa fa-id-badge fa-2xs"></i>
             </a> -->
             <a href="https://www.linkedin.com/in/prernaraov/" target="_blank" rel="noreferrer noopener"
-                class="socialIcons" title="LinkedIn">
+                class="socialIcons-light" title="LinkedIn">
                 <i class="fa fa-linkedin fa-xs"></i>
             </a>
-            <a href="https://github.com/prernarao" target="_blank" rel="noreferrer noopener" class="socialIcons"
+            <a href="https://github.com/prernarao" target="_blank" rel="noreferrer noopener" class="socialIcons-light"
                 title="Github">
                 <i class="fa fa-github fa-xs"></i>
+            </a>
+            <a onclick="changeDisplayMode()" class="socialIcons-light" title="Change Mode">
+                <!-- <i class="fa fa-universal-access" aria-hidden="true"></i> -->
+                <i id="displayMode" class="fa fa-moon-o" aria-hidden="true"></i>
             </a>
             <a href="javascript:void(0);" class="hamburger" onclick="openMenu()">
                 <i class="fa fa-bars"></i>
@@ -55,6 +60,10 @@
     <div id="hamburgerMenu" class="hamburgerMenu">
         <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
         <div class="menu-content">
+            <a onclick="changeDisplayMode()" class="socialIcons-light github" title="Change Mode">
+                <!-- <i class="fa fa-universal-access" aria-hidden="true"></i> -->
+                <i id="hamburgerDisplayMode" class="fa fa-moon-o" aria-hidden="true"></i> Change Mode
+            </a>
             <a href="about.html" class="github" title="About Me">
                 About Me
             </a>
@@ -72,7 +81,10 @@
         </div>
     </div>
     <div class="gallery" id="gallery" onclick="closeMenu()">
-        <h3 onclick="showGrid()" id="backToGrid">This page is still under construction :)</h3>
+        <h3 id="top-div">This page is still under construction :)</h3>
+        <div onclick="showGrid()" id="backToGrid" class="buttons" style="display: none;">
+            <a class="pageLinks-light">All Projects</a>
+        </div>
         <div class="image-grid" id="image-grid">
             <div class="column">
                 <img src="images/Placeholders/SE-2.png" id="html" style="width:100%" onclick="hideGrid(this)">
@@ -90,7 +102,7 @@
             <div class="info-div">
                 <div class="left-div">
                     <div class="title">
-                        <h2>HTML</h2>&nbsp;&nbsp;&nbsp;College &middot; Fullstack Development
+                        <h2>Sketch2HTML</h2><br />College &middot; Fullstack Development
                     </div>
                     <div>
                         <h3>Description</h3>
@@ -98,8 +110,9 @@
                     </div>
                 </div>
                 <div class="right-div">
-                    <p><b>Project Context: </b>What kind of project it was.</p><br />
-                    <p><b>Roles & Responsibilities: </b>How I contributed.</p><br />
+                    <p><b>Project Context: </b>Jan 2020 - Jun 2020</p><br />
+                    <p><b>Roles & Responsibilities: </b>Literature Review, UI Design,<br /> more stuff, more stuff.</p>
+                    <br />
                     <p><b>Tools/Methods Used: </b>What I used to build it.</p>
                 </div>
             </div>
@@ -138,7 +151,7 @@
             <div class="info-div">
                 <div class="left-div">
                     <div class="title">
-                        <h2>ZFP</h2>&nbsp;&nbsp;&nbsp;Internship &middot; Fullstack Development
+                        <h2>ZFP</h2><br />Internship &middot; Fullstack Development
                     </div>
                     <div>
                         <h3>Description</h3>
@@ -186,7 +199,7 @@
             <div class="info-div">
                 <div class="left-div">
                     <div class="title">
-                        <h2>KYC</h2>&nbsp;&nbsp;&nbsp;Internship &middot; Fullstack Development
+                        <h2>KYC</h2><br />Internship &middot; Fullstack Development
                     </div>
                     <div>
                         <h3>Description</h3>
@@ -234,7 +247,7 @@
             <div class="info-div">
                 <div class="left-div">
                     <div class="title">
-                        <h2>IBR</h2>&nbsp;&nbsp;&nbsp;Internship &middot; Fullstack Development
+                        <h2>IBR</h2><br />Internship &middot; Fullstack Development
                     </div>
                     <div>
                         <h3>Description</h3>
@@ -282,7 +295,7 @@
             <div class="info-div">
                 <div class="left-div">
                     <div class="title">
-                        <h2>SE</h2>&nbsp;&nbsp;&nbsp;College &middot; Fullstack Development
+                        <h2>SE</h2><br />College &middot; Fullstack Development
                     </div>
                     <div>
                         <h3>Description</h3>
@@ -332,32 +345,6 @@
         Made with <span class="heart">&hearts;</span> by Prerna Rao
     </footer>
     <script>
-        function openMenu() {
-            document.getElementById("hamburgerMenu").style.width = "40%";
-        }
-
-        function closeMenu() {
-            document.getElementById("hamburgerMenu").style.width = "0%";
-        }
-
-        function hideGrid(element) {
-            document.getElementById("image-grid").style.display = "none";
-            var elementID = element.id + "-info";
-            document.getElementById(elementID).style.display = "block";
-            document.getElementById("backToGrid").innerText = "<< Go back to all projects";
-        }
-
-        function showGrid() {
-            document.getElementById("image-grid").style.display = "flex";
-            document.getElementById("backToGrid").innerText = "This page is still under construction :)";
-
-            document.getElementById("html-info").style.display = "none";
-            document.getElementById("kyc-info").style.display = "none";
-            document.getElementById("zfp-info").style.display = "none";
-            document.getElementById("ibr-info").style.display = "none";
-            document.getElementById("se-info").style.display = "none";
-        }
-
         var slideIndex = [1, 1, 1, 1, 1];
         var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
         showSlides(1, 0);

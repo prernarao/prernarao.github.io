@@ -9,11 +9,16 @@
 
 body {
     font-family: "Josefin Slab", Georgia, sans-serif;
-    /* font-family: 'Rubik', sans-serif; */
     margin: 0;
-    /* background: #465c8b; */
+}
+
+.body-light {
     background: whitesmoke;
-    /* background-image: linear-gradient(to bottom right, rgb(181, 37, 224), rgb(236, 210, 59)); */
+}
+
+.body-dark {
+    background: #1A202C;
+    color: #E2E8F0;
 }
 
 .header {
@@ -25,10 +30,18 @@ body {
     align-items: center;
 }
 
-.name-div a{
+.name-light a{
     font-family: "Josefin Slab", Georgia, sans-serif;
     text-decoration: none;
     color: black;
+    font-size: 2.5rem;
+    vertical-align: middle;
+}
+
+.name-dark a {
+    font-family: "Josefin Slab", Georgia, sans-serif;
+    text-decoration: none;
+    color: #E2E8F0;
     font-size: 2.5rem;
     vertical-align: middle;
 }
@@ -49,21 +62,33 @@ body {
     font-size: 20px;
 }
 
-.header .pageLinks {
+.header .pageLinks-light {
     padding: 7px 6px 2px 6px;
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
-.header .pageLinks:hover {
+.header .pageLinks-light:hover {
     /* background: black;
     color: white; */
     transition: background .2s ease-in-out;
     border-bottom: 1.5px solid rgb(26, 26, 26);
 }
 
-.headerIcons-div .hamburger {
+.header .pageLinks-dark {
+    padding: 7px 6px 2px 6px;
+    color: #E2E8F0;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.header .pageLinks-dark:hover {
+    transition: background .2s ease-in-out;
+    border-bottom: 1.5px solid #E2E8F0;
+}
+
+.headerIcons-div .hamburger, .headerIcons-div .hamburger-dark {
     display: none;
 }
 
@@ -74,7 +99,14 @@ body {
     padding: 5px;
 }
 
-.headerIcons-div .socialIcons {
+.headerIcons-div .hamburger-dark:hover {
+    color: #1A202C;
+    background: #E2E8F0;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.headerIcons-div .socialIcons-light {
     position: "relative";
     color: black;
     size: "20px !important";
@@ -82,23 +114,43 @@ body {
     padding: 4px;
 }
 
-.headerIcons-div .socialIcons:hover {
-    /* color: green; */
+.headerIcons-div .socialIcons-light:hover {
+    size: 30px;
     transition: color .2s ease-in-out;
     border-bottom: 1.5px solid rgb(26, 26, 26);
 }
 
-.hamburgerMenu {
+.headerIcons-div .socialIcons-dark {
+    position: "relative";
+    color: #E2E8F0;
+    size: "20px !important";
+    margin-right: 4px;
+    padding: 4px;
+}
+
+.headerIcons-div .socialIcons-dark:hover {
+    size: 30px;
+    transition: color .2s ease-in-out;
+    border-bottom: 1.5px solid #E2E8F0;
+}
+
+#hamburgerMenu {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+}
+
+.hamburgerMenu {
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.hamburgerMenu-dark {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .menu-content {
@@ -121,6 +173,10 @@ body {
     color: whitesmoke;
 }
 
+.github-dark:hover, .close-dark:hover{
+    color: black;
+}
+
 .hamburgerMenu a {
     padding: 20px;
     text-decoration: none;
@@ -130,7 +186,16 @@ body {
     transition: 0.3s;
 }
 
-.hamburgerMenu .close {
+.hamburgerMenu-dark a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #636363;
+    display: block;
+    transition: 0.3s;
+}
+
+.hamburgerMenu .close, .hamburgerMenu-dark .close-dark {
     position: absolute;
     font-size: 60px;
     padding: 5px;
@@ -163,6 +228,17 @@ body {
     text-align: justify;
 }
 
+.content .about-content-dark {
+    font-family: 'Rubik', sans-serif;
+    max-width: 62%;
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 1.6;
+    min-width: 50%;
+    color: rgb(194, 201, 211);
+    text-align: justify;
+}
+
 .footer {
     position: absolute;
     padding: 15px;
@@ -176,6 +252,10 @@ body {
     color: rgba(240, 16, 102, 0.651);
 }
 
+.heart-dark {
+    color: rgb(238, 102, 154);
+}
+
 @media screen and (max-width: 760px) {
     .headerIcons-div a {
         display: none;
@@ -184,6 +264,16 @@ body {
     .headerIcons-div a.hamburger {
         float: right;
         color: black;
+        padding: 5px;
+        position: absolute;
+        top: 6%;
+        right: 5%;
+        display: block;
+    }
+
+    .headerIcons-div a.hamburger-dark {
+        float: right;
+        color: #E2E8F0;
         padding: 5px;
         position: absolute;
         top: 6%;

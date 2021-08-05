@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/about.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-
+    <script src="js/about.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-062204VTT0"></script>
     <script>
@@ -25,25 +25,29 @@
 
 </style>
 
-<body>
+<body class="body-light">
     <div class="header">
-        <div class="name-div">
+        <div class="name-light">
             <a href="index.html">
                 <b>Prerna</b> Rao
             </a>
         </div>
         <div class="headerIcons-div" id="headerIcons">
-            <a href="work.html" class="pageLinks" title="Work">
+            <a href="work.html" class="pageLinks-light" title="Work">
                 Work
             </a>
-            <!-- <a href="docs/CV.pdf" class="socialIcons" title="Resume">
+            <!-- <a href="docs/CV.pdf" class="socialIcons-light" title="Resume">
                 <i class="fa fa-id-badge fa-2xs"></i>
             </a> -->
-            <a href="https://www.linkedin.com/in/prernaraov/" class="socialIcons" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/prernaraov/" class="socialIcons-light" title="LinkedIn">
                 <i class="fa fa-linkedin fa-xs"></i>
             </a>
-            <a href="https://github.com/prernarao" class="socialIcons" title="Github">
+            <a href="https://github.com/prernarao" class="socialIcons-light" title="Github">
                 <i class="fa fa-github fa-xs"></i>
+            </a>
+            <a onclick="changeDisplayMode()" class="socialIcons-light" title="Change Mode">
+                <!-- <i class="fa fa-universal-access" aria-hidden="true"></i> -->
+                <i id="displayMode" class="fa fa-moon-o" aria-hidden="true"></i>
             </a>
             <a href="javascript:void(0);" class="hamburger" onclick="openMenu()">
                 <i class="fa fa-bars"></i>
@@ -53,12 +57,16 @@
     <div id="hamburgerMenu" class="hamburgerMenu">
         <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
         <div class="menu-content">
-            <a href="work.html" class="github" title="My Work">
+            <a onclick="changeDisplayMode()" class="socialIcons-light github" title="Change Mode">
+                <!-- <i class="fa fa-universal-access" aria-hidden="true"></i> -->
+                <i id="hamburgerDisplayMode" class="fa fa-moon-o" aria-hidden="true"></i> Change Mode
+            </a>
+            <a href="work.html" class="github" title="About Me">
                 My Work
             </a>
-            <!-- <a href="docs/CV.pdf" class="resume" target="_blank" rel="noreferrer noopener" title="Resume">
-                <i class="fa fa-id-badge fa-xs"></i> Resume
-            </a> -->
+            <!-- <a href="docs/CV.pdf" target="_blank" rel="noreferrer noopener" class="resume" title="Resume"> -->
+            <!-- <i class="fa fa-id-badge fa-xs"></i> Resume -->
+            <!-- </a> -->
             <a href="https://www.linkedin.com/in/prernaraov/" target="_blank" rel="noreferrer noopener" class="linkedin"
                 title="LinkedIn">
                 <i class="fa fa-linkedin fa-xs"></i> LinkedIn
@@ -79,15 +87,6 @@
     <footer class="footer">
         Made with <span class="heart">&hearts;</span> by Prerna Rao
     </footer>
-    <script>
-        function openMenu() {
-            document.getElementById("hamburgerMenu").style.width = "40%";
-        }
-
-        function closeMenu() {
-            document.getElementById("hamburgerMenu").style.width = "0%";
-        }
-    </script>
 </body>
 
 </html>
