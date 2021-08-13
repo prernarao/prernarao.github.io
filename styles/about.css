@@ -217,7 +217,7 @@ body {
 
 .content .about-content {
     font-family: 'Rubik', sans-serif;
-    max-width: 62%;
+    max-width: 52%;
     font-size: 1.3rem;
     text-align: justify;
     line-height: 1.6;
@@ -230,7 +230,7 @@ body {
 
 .content .about-content-dark {
     font-family: 'Rubik', sans-serif;
-    max-width: 62%;
+    max-width: 52%;
     font-size: 1.3rem;
     text-align: justify;
     line-height: 1.6;
@@ -291,8 +291,8 @@ body {
         margin: 1.5em;
     }
 
-    .content .about-content {
-        max-width: 85%;
+    .content .about-content, .content .about-content-dark {
+        max-width: 80%;
     }
 }
 

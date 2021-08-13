@@ -1,3 +1,8 @@
+function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+}
+
 function openMenu() {
     document.getElementById("hamburgerMenu") ? document.getElementById("hamburgerMenu").style.width = "40%" : '';
     document.getElementById("hamburgerMenu-dark") ? document.getElementById("hamburgerMenu-dark").style.width = "40%" : '';

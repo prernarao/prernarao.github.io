@@ -252,21 +252,7 @@ body {
     justify-content: space-between;
 }
 
-.content .about-img {
-}
 
-.content .about-content {
-    font-family: 'Rubik', sans-serif;
-    max-width: 62%;
-    font-size: 1.2rem;
-    text-align: justify;
-    line-height: 1.6;
-    min-width: 50%;
-    /* font-weight: 600; */
-    /* font-size: 1.3rem; */
-    color: black;
-    text-align: justify;
-}
 
 .image-grid {
     display: flex;
@@ -322,7 +308,7 @@ h2 {
     transition: filter .1s ease-in-out;
   }
 
-  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+  .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {display: none}
 
   .images-container {
     max-width: 50%;
@@ -348,6 +334,7 @@ h2 {
 
   /* Position the "next button" to the right */
 .next {
+    /* right: 40%; */
     right: 0;
     border-radius: 50% 0 0 50%;
   }
@@ -366,6 +353,7 @@ h2 {
     padding: 8px 0px;
     position: absolute;
     bottom: 3px;
+    /* width: 60%; */
     width: 100%;
     text-align: center;
   }
