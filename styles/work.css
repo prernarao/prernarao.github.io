@@ -290,17 +290,41 @@ body {
       display: flex;
       flex-direction: column;
       align-items: baseline;
+      /* max-width: 40%; */
       /* line-height: 1.6; */
   }
 
-h2 {
+  .projectInfo-div .description {
+      width: 60%;
+      text-align: justify;
+  }
+
+  h2 {
     margin-bottom: 0;
-}
+  }
 
   .info-div {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
+      padding-bottom: 20px;
+  }
+
+  .left-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8% 0 8%;
+  }
+  
+  .right-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-top: 20px;
+      line-height: 1.6;
+      /* width: 45%; */
+      /* float: right; */
   }
 
   .column img:hover {
@@ -311,7 +335,7 @@ h2 {
   .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {display: none}
 
   .images-container {
-    max-width: 50%;
+    width: 50%;
     position: relative;
     margin: auto;
   }
@@ -421,6 +445,19 @@ h2 {
         flex: 100%;
         max-width: 100%;
       }
+
+    .info-div, .left-div, .right-div {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .projectInfo-div .description {
+        width: 100%;
+    }
+
+    .images-container {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 760px) {
