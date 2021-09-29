@@ -39,9 +39,13 @@
             <a href="about.html" class="pageLinks-light" title="About Me">
                 About
             </a>
-            <!-- <a href="docs/CV.pdf" class="socialIcons" target="_blank" rel="noreferrer noopener" title="Resume">
-                    <i class="fa fa-id-badge fa-2xs"></i>
-                </a> -->
+            <a href="docs/CV.pdf" class="socialIcons-light" target="_blank" rel="noreferrer noopener" title="Resume">
+                <i class="fa fa-id-badge fa-2xs"></i>
+            </a>
+            <a href="mailto:prernaraov@outlook.com" class="socialIcons-light" target="_blank" rel="noreferrer noopener"
+                title="Email">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
             <a href="https://www.linkedin.com/in/prernaraov/" target="_blank" rel="noreferrer noopener"
                 class="socialIcons-light" title="LinkedIn">
                 <i class="fa fa-linkedin fa-xs"></i>
@@ -62,21 +66,26 @@
     <div id="hamburgerMenu" class="hamburgerMenu">
         <a href="javascript:void(0)" class="close" onclick="closeMenu()">&times;</a>
         <div class="menu-content">
-            <a onclick="changeDisplayMode()" class="socialIcons-light github" title="Change Mode">
+            <a onclick="changeDisplayMode()" class="socialIcons-light icon" title="Change Mode">
                 <!-- <i class="fa fa-universal-access" aria-hidden="true"></i> -->
                 <i id="hamburgerDisplayMode" class="fa fa-moon-o" aria-hidden="true"></i> Change Mode
             </a>
-            <a href="about.html" class="github" title="About Me">
+            <a href="about.html" class="icon" title="About Me">
                 About Me
             </a>
-            <!-- <a href="docs/CV.pdf" target="_blank" rel="noreferrer noopener" class="resume" title="Resume"> -->
-            <!-- <i class="fa fa-id-badge fa-xs"></i> Resume -->
-            <!-- </a> -->
-            <a href="https://www.linkedin.com/in/prernaraov/" target="_blank" rel="noreferrer noopener" class="linkedin"
+            <a href="docs/CV.pdf" target="_blank" rel="noreferrer noopener" class="icon" title="Resume">
+                <i class="fa fa-id-badge fa-xs"></i> Resume
+            </a>
+            <a href="mailto:prernaraov@outlook.com" target="_blank" rel="noreferrer noopener" class="icon"
+                title="Email">
+                <i class="fa fa-envelope" aria-hidden="true"></i> Email
+                <!-- : prerna (dot) rao (at) outlook (dot) com -->
+            </a>
+            <a href="https://www.linkedin.com/in/prernaraov/" target="_blank" rel="noreferrer noopener" class="icon"
                 title="LinkedIn">
                 <i class="fa fa-linkedin fa-xs"></i> LinkedIn
             </a>
-            <a href="https://github.com/prernarao" target="_blank" rel="noreferrer noopener" class="github"
+            <a href="https://github.com/prernarao" target="_blank" rel="noreferrer noopener" class="icon"
                 title="Github">
                 <i class="fa fa-github fa-xs"></i> GitHub
             </a>
@@ -89,22 +98,52 @@
         </div>
         <div class="image-grid" id="image-grid">
             <div class="column">
-                <img src="images/Placeholders/HTML-1.png" id="html" style="width:100%" onclick="hideGrid(this)">
-                <img src="images/Placeholders/CoinSweeper.png" id="cs" style="width:100%" onclick="hideGrid(this)">
+                <div class="container" id="html" onclick="hideGrid(this)">
+                    <img src="images/Placeholders/HTML-1.png" alt="Sketch2HTML" style="width:100%">
+                    <div class="middle">
+                        <div class="proj-name">Sketch2HTML</div>
+                    </div>
+                </div>
+                <div class="container" id="ab" onclick="hideGrid(this)">
+                    <img src="images/Placeholders/CoinSweeper.png" style="width:100%">
+                    <div class="middle">
+                        <div class="proj-name">AryaBota</div>
+                    </div>
+                </div>
+
             </div>
             <div class="column">
-                <img src="images/Placeholders/SE-2.png" id="se" style="width:100%" onclick="hideGrid(this)">
-                <img src="images/Placeholders/KYC-STOCK.jpg" id="kyc" style="width:100%" onclick="hideGrid(this)">
+                <div class="container" id="se" onclick="hideGrid(this)">
+                    <img src="images/Placeholders/SE-2.png" style="width:100%">
+                    <div class="middle">
+                        <div class="proj-name">Restaurant Management</div>
+                    </div>
+                </div>
+                <div class="container" id="kyc" onclick="hideGrid(this)">
+                    <img src="images/Placeholders/KYC-STOCK.jpg" style="width:100%">
+                    <div class="middle">
+                        <div class="proj-name">GE Healthcare: Know-Your-Customer</div>
+                    </div>
+                </div>
+
+
             </div>
             <div class="column">
-                <img src="images/Placeholders/ZFP_STOCK.png" id="zfp" style="width:100%" onclick="hideGrid(this)">
+                <div class="container" id="zfp" onclick="hideGrid(this)">
+                    <img src="images/Placeholders/ZFP_STOCK.png" style="width:100%">
+                    <div class="middle">
+                        <div class="proj-name">GE Healthcare: Zero Footprint Viewer</div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="projectInfo-div" id="html-info">
+            <br>
             <div class="info-div">
-                <div class="left-div">
+                <div class="first-div">
                     <div class="title">
-                        <h2>Sketch2HTML</h2><br />College &middot; Fullstack Development
+                        <h2>Sketch2HTML</h2>College &middot; Fullstack Development
                     </div>
                     <div class="description">
                         <h3>Description</h3>
@@ -112,42 +151,9 @@
                     </div>
                 </div>
                 <br />
-                <div class="right-div">
-                    <div>
-                        <b>Project Context: </b>
-                        <ul>
-                            <li>Jan 2020 – Jun 2020</li>
-                            <li>PES University, Bangalore</li>
-                            <li>Team Size: 3</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Roles & Responsibilities: </b>
-                        <ul>
-                            <li>Requirement Gathering</li>
-                            <li>Literature Review</li>
-                            <li>UI Design and Development</li>
-                            <li>Data Creation</li>
-                            <li>SVM Model Implementation</li>
-                            <li>Unit Testing</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Tools/Methods Used: </b>
-                        <ul>
-                            <li>Wireframes</li>
-                            <li>User Interface Design</li>
-                            <li>Python 3.6, OpenCV</li>
-                            <li>Machine Learning</li>
-                            <li>HTML5/ES6/CSS3</li>
-                            <li>Selenium Web Driver</li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
-            <div>
-                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
-            </div>
+
             <div class="slideshow">
                 <div class="images-container">
                     <div class="mySlides1">
@@ -175,10 +181,58 @@
                             <span class="dot" onclick="currentSlide(3)"></span>
                         </div> -->
             </div>
+            <div class="details-div">
+                <div class="second-div">
+                    <div>
+                        <b>Project Context: </b>
+                        <ul>
+                            <li>Jan 2020 – Jun 2020</li>
+                            <li>PES University, Bangalore</li>
+                            <li>Team Size: 3</li>
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Roles & Responsibilities: </b>
+                        <div style="display: flex; flex-direction: row;">
+                            <ul>
+                                <li>Requirement Gathering</li>
+                                <li>Literature Review</li>
+                                <li>UI Design and Development</li>
+                            </ul>
+                            <ul>
+                                <li>Data Creation</li>
+                                <li>SVM Model Implementation</li>
+                                <li>Unit Testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Tools/Methods Used: </b>
+                        <div style="display: flex; flex-direction: row;">
+                            <ul>
+                                <li>Wireframes</li>
+                                <li>User Interface Design</li>
+                                <li>Python 3.6, OpenCV</li>
+                            </ul>
+                            <ul>
+                                <li>Machine Learning</li>
+                                <li>HTML5/ES6/CSS3</li>
+                                <li>Selenium Web Driver</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
+                <a href="docs/Sketch2Html_ProjectReport.pdf" target="_blank" rel="noreferrer noopener">Reprot</a>
+            </div>
+
         </div>
         <div class="projectInfo-div" id="zfp-info">
+            <br>
             <div class="info-div">
-                <div class="left-div">
+                <div class="first-div">
                     <div class="title">
                         <h2>Zero Footprint Viewer</h2><br />Healthcare &middot; Fullstack Development
                     </div>
@@ -187,37 +241,7 @@
                         Web-based application to view and manipulate clinical images through a UI
                     </div>
                 </div>
-                <div class="right-div">
-                    <div>
-                        <b>Project Context: </b>
-                        <ul>
-                            <li>Sep 2020 – Present</li>
-                            <li>Software Engineering Specialist</li>
-                            <li>GE Healthcare, Digital Solutions</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Roles & Responsibilities: </b>
-                        <ul>
-                            <li>To be added
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Tools/Methods Used: </b>
-                        <ul>
-                            <li>Java</li>
-                            <li>SpringBoot</li>
-                            <li>ES6, KnockoutJS, Handlebar.js</li>
-                            <li>VS Solutions</li>
-                            <li>Jasmine, Karma</li>
-                            <li>Kubernetes</li>
-                            <li>Helm, Shell Scripting</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
+                <br />
             </div>
             <div class="slideshow">
                 <div class="images-container">
@@ -241,27 +265,95 @@
                 </div>
                 <br>
                 <!-- <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div> -->
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div> -->
+            </div>
+            <div class="details-div">
+                <div class="second-div">
+                    <div>
+                        <b>Project Context: </b>
+                        <ul>
+                            <li>Sep 2020 – Present</li>
+                            <li>Software Engineering Specialist</li>
+                            <li>GE Healthcare, Digital Solutions</li>
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Roles & Responsibilities: </b>
+                        <ul>
+                            <li>To be added
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Tools/Methods Used: </b>
+                        <div style="display: flex; flex-direction: row;">
+                            <ul>
+                                <li>Java</li>
+                                <li>SpringBoot</li>
+                                <li>JavaScript/ES6, TypeScript</li>
+                                <li>KnockoutJS, Handlebar.js</li>
+                            </ul>
+                            <ul>
+                                <li>VS Solutions</li>
+                                <li>Jasmine, Karma</li>
+                                <li>Kubernetes</li>
+                                <li>Helm, Shell Scripting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
             </div>
         </div>
-        <div class="projectInfo-div" id="cs-info">
+        <div class="projectInfo-div" id="ab-info">
             <div class="info-div">
-                <div class="left-div">
+                <div class="first-div">
                     <div class="title">
-                        <h2>CoinSweeper</h2><br />Research &middot; Fullstack Development
+                        <h2>AryaBota</h2><br />Research &middot; Fullstack Development
                     </div>
                     <div class="description">
                         <h3>Description</h3>
                         It is a visual tool to introduce programming, that allows students to gradually transition from
                         using natural language language commands, to more Pythonic constructs.
-                        <br />It aims to gamify this process through the visual component CoinSweeper – a bot in a grid
+                        <br />It aims to gamify this process through the visual component AryaBota – a bot in a grid
                         that detects and picks up coins while navigating its way around obstacles.
                     </div>
                 </div>
-                <div class="right-div">
+                <br />
+            </div>
+            <div class="slideshow">
+                <div class="images-container">
+                    <div class="mySlides6">
+                        <img src="images/Placeholders/SE-3.png" style="width:100%">
+                        <div class="text">Caption One</div>
+                    </div>
+
+                    <div class="mySlides6">
+                        <img src="images/Placeholders/SE-3.png" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides6">
+                        <img src="images/Placeholders/SE-3.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div> -->
+            </div>
+            <div class="details-div">
+                <div class="second-div">
                     <div>
                         <b>Project Context: </b>
                         <ul>
@@ -270,6 +362,7 @@
                             <li>Team Size: 4</li>
                         </ul>
                     </div>
+                    <div class="vr"></div>
                     <div>
                         <b>Roles & Responsibilities: </b>
                         <ul>
@@ -280,6 +373,7 @@
                             <li>Translations</li>
                         </ul>
                     </div>
+                    <div class="vr"></div>
                     <div>
                         <b>Tools/Methods Used: </b>
                         <ul>
@@ -292,41 +386,13 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div>
                 <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
             </div>
-            <div class="slideshow">
-                <div class="images-container">
-                    <div class="mySlides6">
-                        <img src="images/Placeholders/SE-3.png" style="width:100%">
-                        <div class="text">Caption One</div>
-                    </div>
 
-                    <div class="mySlides6">
-                        <img src="images/Placeholders/SE-3.png" style="width:100%">
-                        <div class="text">Caption Two</div>
-                    </div>
-
-                    <div class="mySlides6">
-                        <img src="images/Placeholders/SE-3.png" style="width:100%">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                </div>
-                <br>
-                <!-- <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div> -->
-            </div>
         </div>
         <div class="projectInfo-div" id="kyc-info">
             <div class="info-div">
-                <div class="left-div">
+                <div class="first-div">
                     <div class="title">
                         <h2>Know-Your-Customer</h2><br />Internship &middot; Fullstack Development
                     </div>
@@ -335,36 +401,7 @@
                         A brief intoduction to this project.
                     </div>
                 </div>
-                <div class="right-div">
-                    <div>
-                        <b>Project Context: </b>
-                        <ul>
-                            <li>Jan 2020 – Sep 2020</li>
-                            <li>Software Engineering Internt</li>
-                            <li>GE Healthcare, Digital Technology</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Roles & Responsibilities: </b>
-                        <ul>
-                            <li>To be added
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Tools/Methods Used: </b>
-                        <ul>
-                            <li>ReactJS</li>
-                            <li>Node.js</li>
-                            <li>ES6</li>
-                            <li>AWS</li>
-                            <li>Agile Development</li>
-                            <li>Rally</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
+                <br />
             </div>
             <div class="slideshow">
                 <div class="images-container">
@@ -388,15 +425,52 @@
                 </div>
                 <br>
                 <!-- <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div> -->
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div> -->
             </div>
+            <div class="details-div">
+                <div class="second-div">
+                    <div>
+                        <b>Project Context: </b>
+                        <ul>
+                            <li>Jan 2020 – Sep 2020</li>
+                            <li>Software Engineering Internt</li>
+                            <li>GE Healthcare, Digital Technology</li>
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Roles & Responsibilities: </b>
+                        <ul>
+                            <li>To be added
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Tools/Methods Used: </b>
+                        <div style="display: flex; flex-direction: row;">
+                            <ul>
+                                <li>ReactJS</li>
+                                <li>Node.js</li>
+                                <li>ES6</li>
+                            </ul>
+                            <ul>
+                                <li>AWS</li>
+                                <li>Agile Development</li>
+                                <li>Rally</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
+            </div>
+
         </div>
         <div class="projectInfo-div" id="ibr-info">
             <div class="info-div">
-                <div class="left-div">
+                <div class="first-div">
                     <div class="title">
                         <h2>Installed-Base Repository</h2><br />Internship &middot; Fullstack Development
                     </div>
@@ -405,29 +479,7 @@
                         A brief intoduction to this project.
                     </div>
                 </div>
-                <div class="right-div">
-                    <div>
-                        <b>Project Context: </b>
-                        <ul>
-                            <li>To be added</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Roles & Responsibilities: </b>
-                        <ul>
-                            <li>To be added</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Tools/Methods Used: </b>
-                        <ul>
-                            <li>To be added</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
+                <br />
             </div>
             <div class="slideshow">
                 <div class="images-container">
@@ -456,10 +508,36 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
+            <div class="details-div">
+                <div class="second-div">
+                    <div>
+                        <b>Project Context: </b>
+                        <ul>
+                            <li>To be added</li>
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Roles & Responsibilities: </b>
+                        <ul>
+                            <li>To be added</li>
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Tools/Methods Used: </b>
+                        <ul>
+                            <li>To be added</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
+            </div>
         </div>
         <div class="projectInfo-div" id="se-info">
             <div class="info-div">
-                <div class="left-div">
+                <div class="first-div">
                     <div class="title">
                         <h2>Tomatoz - Restaurant Management</h2><br />College &middot; Fullstack Development
                     </div>
@@ -468,37 +546,7 @@
                         A brief intoduction to this project.
                     </div>
                 </div>
-                <div class="right-div">
-                    <div>
-                        <b>Project Context: </b>
-                        <ul>
-                            <li>OCt 2019 – Dec 2019</li>
-                            <li>PES University, Bangalore</li>
-                            <li>Team Size: 5</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Roles & Responsibilities: </b>
-                        <ul>
-                            <li>Project Planning</li>
-                            <li>Requirement Gathering</li>
-                            <li>Design Documentation</li>
-                            <li>UI Design</li>
-                            <li>Backend Development</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <b>Tools/Methods Used: </b>
-                        <ul>
-                            <li>Firebase</li>
-                            <li>HTML5</li>
-                            <li>ES6</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
+                <br />
             </div>
             <div class="slideshow">
                 <div class="images-container">
@@ -522,12 +570,47 @@
                 </div>
                 <br>
                 <!-- <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div> -->
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div> -->
             </div>
+            <div class="details-div">
+                <div class="second-div">
+                    <div>
+                        <b>Project Context: </b>
+                        <ul>
+                            <li>OCt 2019 – Dec 2019</li>
+                            <li>PES University, Bangalore</li>
+                            <li>Team Size: 5</li>
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Roles & Responsibilities: </b>
+                        <ul>
+                            <li>Project Planning</li>
+                            <li>Requirement Gathering</li>
+                            <li>Design Documentation</li>
+                            <li>UI Design</li>
+                            <li>Backend Development</li>
+                        </ul>
+                    </div>
+                    <div class="vr"></div>
+                    <div>
+                        <b>Tools/Methods Used: </b>
+                        <ul>
+                            <li>Firebase</li>
+                            <li>HTML5</li>
+                            <li>ES6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <h3 style="text-align: center;">Space for process/experiences/outcomes/learning.</h3>
         </div>
+
+    </div>
     </div>
     </div>
     <footer class="footer">

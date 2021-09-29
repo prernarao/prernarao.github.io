@@ -1,0 +1,114 @@
+Project Number: 1
+Name:  Sketch2HTML
+Specs: Undergrad, Fullstack Development
+Description:
+Context: Jan 2020 – May 2020
+         PES University, Bangalore
+         Team Size (3)
+Roles&Responsibilities: 
+        Requirements Gathering
+        Literature Review
+        Data Creation
+        UI Design and Development
+        SVM Model Implementation
+        Unit Testing
+Tools/Methods:
+        Wireframes
+        UI Design
+        Python
+        OpenCV
+        HTML,JS,css
+        Selenium
+Process/experiences/outcomes/learning:
+------------------------------------------------------------------
+Project Number: 2
+Name: Tomatoz
+Specs: Undergrad, Fullstack Development, SDLC Principles
+Description:
+Context:
+        Oct 2019 - Dec 2019
+        PES University, Bangalore
+        Team Size: 5
+Roles&Responsibilities:
+        Project Planning
+        Requirements Gathering
+        Design Documentation
+        UI Design
+        Backend Development
+Tools/Methods:
+        Firebase
+        HTML/ES6
+Process/experiences/outcomes/learning:
+------------------------------------------------------------------
+Project Number: 3
+Name: AryaBota
+Specs: Fullstack Development, Research
+Description: 
+        It is a visual tool to introduce programming, that allows students to gradually transition from using natural language language commands, to more Pythonic constructs. 
+        It aims to gamify this process through the visual component AryaBota – a bot in a grid that detects and picks up coins while navigating its way around obstacles.
+Context:
+        July 2021 - Present
+        Passion Project
+        Team Size: 4
+Roles&Responsibilities:
+        User Interviews
+
+        Wireframing
+        UI Design and Development
+        Translation
+        Grammar
+Tools/Methods:
+        Python
+        ReactJS
+        Figma
+        Persona Mapping
+        Journey Mapping
+        Empathy Mapping
+Process/experiences/outcomes/learning:
+    Process:
+        Weekly sprints
+    Experience:
+        Challenging to incorporate multiple languages
+        Fun to do UI
+    Outcomes:
+    Learnings:
+        Need for empathy, equity. Need to understand not everyone needs Computing Edu.
+------------------------------------------------------------------
+Project Number: 4
+Name: KYC
+Specs: Internship, Front-End Development
+Description:
+Context:
+        Jan 2020 - Sep 2020
+        Software Engineering Intern
+        GE Healthcare, Digital Technology
+Roles&Responsibilities:
+Tools/Methods:
+        ReactJS
+        Node.js
+        ES6
+        AWS
+        Rally
+        Agile Development
+Process/experiences/outcomes/learning:
+------------------------------------------------------------------
+Project Number: 5
+Name: ZFP
+Specs: Healthcare, Fullstack Development
+Description: Web-based application to view and manipulate clinical images through a UI
+Context:
+        Sep 2020 - Present
+        Software Engineering Specialist
+        GE Healthcare, Digital Solutions
+Roles&Responsibilities:
+Tools/Methods:
+        Java
+        SpringBoot
+        ES6
+        KnockoutJS
+        Testing
+        VS Solutions
+        Kubernetes
+        Helm, Shell Script
+Process/experiences/outcomes/learning:
+------------------------------------------------------------------

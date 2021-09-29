@@ -35,7 +35,7 @@ function showGrid() {
     document.getElementById("zfp-info").style.display = "none";
     document.getElementById("ibr-info").style.display = "none";
     document.getElementById("se-info").style.display = "none";
-    document.getElementById("cs-info").style.display = "none";
+    document.getElementById("ab-info").style.display = "none";
 }
 
 function changeDisplayMode() {
@@ -47,13 +47,18 @@ function changeDisplayMode() {
         hamburgerModeIcon.className = "fa fa-sun-o";
         document.getElementsByClassName("name-light")[0].className = "name-dark";
         document.getElementsByTagName("body")[0].className = "body-dark";
-        document.getElementsByClassName("github")[0].className = "github-dark";
-        document.getElementsByClassName("github")[0].className = "github-dark";
-        document.getElementsByClassName("github")[0].className = "github-dark";
+        document.getElementsByClassName("icon")[0].className = "icon-dark";
+        document.getElementsByClassName("icon")[0].className = "icon-dark";
+        document.getElementsByClassName("icon")[0].className = "icon-dark";
+        document.getElementsByClassName("icon")[0].className = "icon-dark";
+        document.getElementsByClassName("icon")[0].className = "icon-dark";
+        document.getElementsByClassName("icon")[0].className = "icon-dark";
         document.getElementsByClassName("close")[0].className = "close-dark";
         document.getElementsByClassName("heart")[0].className = "heart-dark";
         document.getElementsByClassName("hamburger")[0].className = "hamburger-dark";
         document.getElementsByClassName("hamburgerMenu")[0].className = "hamburgerMenu-dark";
+        document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
+        document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
         document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
         document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
         document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
@@ -65,13 +70,18 @@ function changeDisplayMode() {
         hamburgerModeIcon.className = "fa fa-moon-o";
         document.getElementsByClassName("name-dark")[0].className = "name-light";
         document.getElementsByTagName("body")[0].className = "body-light";
-        document.getElementsByClassName("github-dark")[0].className = "github";
-        document.getElementsByClassName("github-dark")[0].className = "github";
-        document.getElementsByClassName("github-dark")[0].className = "github";
+        document.getElementsByClassName("icon-dark")[0].className = "icon";
+        document.getElementsByClassName("icon-dark")[0].className = "icon";
+        document.getElementsByClassName("icon-dark")[0].className = "icon";
+        document.getElementsByClassName("icon-dark")[0].className = "icon";
+        document.getElementsByClassName("icon-dark")[0].className = "icon";
+        document.getElementsByClassName("icon-dark")[0].className = "icon";
         document.getElementsByClassName("close-dark ")[0].className = "close";
         document.getElementsByClassName("heart-dark")[0].className = "heart";
         document.getElementsByClassName("hamburger-dark")[0].className = "hamburger";
         document.getElementsByClassName("hamburgerMenu-dark")[0].className = "hamburgerMenu";
+        document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
+        document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
         document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
         document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
         document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";

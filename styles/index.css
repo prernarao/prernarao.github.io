@@ -20,13 +20,19 @@ body {
 }
 
 .p-light, .hello-light, .name-light {
+    font-family: Lato, Helvetica, Arial, sans-serif;
     /* color: #E2E8F0; */
     /* font-weight: 300; */
 }
 
+h2 {
+    font-weight: 500;
+}
+
 .p-dark, .hello-dark {
     color: #E2E8F0;
-    font-weight: 300;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    /* font-weight: 300; */
 }
 
 .header {
@@ -41,24 +47,31 @@ body {
 .gehc {
     text-decoration: none;
     color: rgb(21, 143, 21);
+    font-family: "Josefin Slab", Georgia, sans-serif;
+    font-weight: 600;
     /* color: rgb(6, 101, 179); */
 }
 
 .gehc-dark, .heart-dark {
+    font-family: "Josefin Slab", Georgia, sans-serif;
     text-decoration: none;
     color: rgb(63, 214, 63);
+    font-weight: 600;
     /* color: rgb(6, 101, 179); */
 }
 
 .sitara {
+    font-family: "Josefin Slab", Georgia, sans-serif;
     text-decoration: none;
     color: rgb(57, 16, 148);
+    font-weight: 600;
 }
 
 .sitara-dark {
+    font-family: "Josefin Slab", Georgia, sans-serif;
     text-decoration: none;
     color: rgb(71, 150, 224);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .footer {
@@ -94,15 +107,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items:  center;
-    min-width: 150px;
-    font-size: 20px;
-}
-
-#headerIcons {
-    display: flex;
-    justify-content: space-evenly;
-    align-items:  center;
-    min-width: 250px;
+    column-gap: 10px;
     font-size: 20px;
 }
 
@@ -160,13 +165,14 @@ body {
     line-height: 1.6;
     max-width: 45%;
     min-width: 45%;
-    font-weight: 600;
-    font-size: 1.3rem;
+    /* font-weight: 600; */
+    font-size: 1.2rem;
     color: black;
     text-align: justify;
 }
 
 .content .buttons {
+    font-family: Lato, Helvetica, Arial, sans-serif;
     margin-top: -10px;
 }
 
@@ -175,7 +181,7 @@ body {
     border-radius: 3px;
     color: black;
     border-style: solid;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
 }
 
@@ -192,7 +198,7 @@ body {
     border-radius: 3px;
     color: #E2E8F0;
     border-style: solid;
-    font-weight: 300;
+    /* font-weight: 600; */
     text-decoration: none;
 }
 
@@ -217,20 +223,22 @@ body {
     margin-top: 20px;
 }
 
-.linkedin:hover{
+/* .linkedin:hover, .email:hover{
     color: #0072B1;
 }
 
 .resume:hover{
     color: rgb(8, 138, 8);
-}
+} */
 
-.github:hover, .close:hover{
+.icon:hover, .close:hover{
     color: whitesmoke;
+    font-weight: bolder;
 }
 
-.github-dark:hover, .close-dark:hover{
+.icon-dark:hover, .close-dark:hover{
     color: black;
+    font-weight: bolder;
 }
 
 .headerIcons-div .hamburger, .hamburger-dark {
