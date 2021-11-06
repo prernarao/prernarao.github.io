@@ -19,9 +19,6 @@ function hideGrid(element) {
     document.getElementById("backToGrid").style.display = "inline-block";
     var elementID = element.id + "-info";
     document.getElementById(elementID).style.display = "block";
-    // document.getElementById(elementID).style.display = "flex";
-    // document.getElementById(elementID).style.flexDirection = "column";
-    // document.getElementById("backToGrid").innerText = "<< Go back to all projects";
 }
 
 function showGrid() {
