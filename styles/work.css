@@ -193,6 +193,10 @@ body {
     margin-top: 20px;
 }
 
+.links {
+    text-decoration: none;
+    color: inherit;
+}
 /* .linkedin:hover{
     color: #0072B1;
 }

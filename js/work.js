@@ -50,6 +50,7 @@ function changeDisplayMode() {
         document.getElementsByClassName("icon")[0].className = "icon-dark";
         document.getElementsByClassName("icon")[0].className = "icon-dark";
         document.getElementsByClassName("icon")[0].className = "icon-dark";
+        // document.getElementsByClassName("icon")[0].className = "icon-dark";
         document.getElementsByClassName("close")[0].className = "close-dark";
         document.getElementsByClassName("heart")[0].className = "heart-dark";
         document.getElementsByClassName("hamburger")[0].className = "hamburger-dark";
@@ -59,6 +60,7 @@ function changeDisplayMode() {
         document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
         document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
         document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
+        // document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
         document.getElementsByClassName("pageLinks-light")[0].className = "pageLinks-dark";
         document.getElementsByClassName("pageLinks-light")[0].className = "pageLinks-dark";
     }
@@ -73,6 +75,7 @@ function changeDisplayMode() {
         document.getElementsByClassName("icon-dark")[0].className = "icon";
         document.getElementsByClassName("icon-dark")[0].className = "icon";
         document.getElementsByClassName("icon-dark")[0].className = "icon";
+        // document.getElementsByClassName("icon-dark")[0].className = "icon";
         document.getElementsByClassName("close-dark ")[0].className = "close";
         document.getElementsByClassName("heart-dark")[0].className = "heart";
         document.getElementsByClassName("hamburger-dark")[0].className = "hamburger";
@@ -82,6 +85,7 @@ function changeDisplayMode() {
         document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
         document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
         document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
+        // document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
         document.getElementsByClassName("pageLinks-dark")[0].className = "pageLinks-light";
         document.getElementsByClassName("pageLinks-dark")[0].className = "pageLinks-light";
     }
