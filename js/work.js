@@ -14,25 +14,28 @@ function closeMenu() {
 }
 
 function hideGrid(element) {
+    window.scrollTo(0,0);
     document.getElementById("image-grid").style.display = "none";
     document.getElementById("top-div").style.display = "none";
     document.getElementById("backToGrid").style.display = "inline-block";
+    document.getElementById("backToGrid2").style.display = "inline-block";
     var elementID = element.id + "-info";
     document.getElementById(elementID).style.display = "block";
 }
 
 function showGrid() {
+    window.scrollTo(0,0);
     document.getElementById("image-grid").style.display = "flex";
     document.getElementById("backToGrid").style.display = "none";
+    document.getElementById("backToGrid2").style.display = "none";
     document.getElementById("top-div").style.display = "block";
-    // document.getElementById("backToGrid").innerText = "This page is still under construction :)";
-
     document.getElementById("html-info").style.display = "none";
     document.getElementById("kyc-info").style.display = "none";
     document.getElementById("zfp-info").style.display = "none";
     document.getElementById("ibr-info").style.display = "none";
     document.getElementById("se-info").style.display = "none";
     document.getElementById("ab-info").style.display = "none";
+    document.getElementById("volunteer-info").style.display = "none";
 }
 
 function changeDisplayMode() {
