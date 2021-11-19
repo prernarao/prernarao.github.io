@@ -143,10 +143,10 @@
             </div>
             <div class="column">
                 <div class="container" id="volunteer" onclick="hideGrid(this)">
-                    <div class="proj-name-responsive">Volunteerships</div>
+                    <div class="proj-name-responsive">Volunteering</div>
                     <img src="images/Illustrations/volunteer.png" style="width:100%;">
                     <div class="middle">
-                        <div class="proj-name">Volunteerships</div>
+                        <div class="proj-name">Volunteering</div>
                     </div>
                 </div>
                 <p>Providing inclusive and accessible education to learners from underserved communities</p>
@@ -230,7 +230,7 @@
                     <div class="vr"></div>
                     <div>
                         <b>Roles & Responsibilities: </b>
-                        <div style="display: flex; flex-direction: row;">
+                        <div class="responsiveLists">
                             <ul>
                                 <li>Requirement Gathering</li>
                                 <li>Literature Review</li>
@@ -246,7 +246,7 @@
                     <div class="vr"></div>
                     <div>
                         <b>Tools/Methods Used: </b>
-                        <div style="display: flex; flex-direction: row;">
+                        <div class="responsiveLists">
                             <ul>
                                 <li>Python 3.6</li>
                                 <li>OpenCV</li>
@@ -264,7 +264,7 @@
                     </div>
                 </div>
                 <div class="third-div">
-                    <h3 style="text-align: center; margin-top: 0;">Project Details</h3>
+                    <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
                     <h4 style="margin: 0;">Motivation</h4>
                     The creative design process for a website begins with ideas describing the site's basic structure.
                     This is most often a mockup, sketch, or wireframe.
@@ -314,6 +314,7 @@
                         <div>
                             <img src="images/Placeholders/bg.jpg" class="inline-image" />
                         </div>
+                        <br>
                     </div>
                     <h4 style="margin: 0;">My Contribution</h4>
                     <ul>
@@ -353,11 +354,26 @@
             <div class="info-div">
                 <div class="first-div">
                     <div class="title">
-                        <h2>Zero Footprint Viewer</h2><br />Healthcare &middot; Fullstack Development
+                        <h2>Zero-Footprint Viewer</h2><br />Healthcare/Clinical Imaging &middot; Fullstack Development
+                        &middot; Software Engineering
                     </div>
                     <div class="description">
                         <h3>Description</h3>
-                        Web-based application to view and manipulate clinical images through a UI
+                        <h4><b>What is Zero-Footprint Viewer?</b></h4>
+                        The Zero-Footprint Viewer (ZFP) is a ubiquitous, platform-independent web application to view
+                        and manipulate clinical images.
+                        It enables fast, secure access to patient information across multiple platforms, anywhere there
+                        is an internet connection.
+                        <br>
+                        It provides one platform to view diagnostic images from many modalities, as well as clinical
+                        content in PDF, video, and audio formats,
+                        <br><br>
+                        <h4><b>Who is ZFP for?</b></h4>
+                        ZFP can be used by clinicians and the patient care team to review images, surgery plans, and
+                        care plans.
+                        It allows physicians to access information residing in different systems within a hospital
+                        enterprise even when they are siloed and not connected.
+                        <br>
                     </div>
                 </div>
                 <br />
@@ -403,13 +419,18 @@
                     <div>
                         <b>Roles & Responsibilities: </b>
                         <ul>
-                            <li>To be added
+                            <li>Front-End Development</li>
+                            <li>Back-End Feature Development</li>
+                            <li>Audit Logging</li>
+                            <li>Legacy Code Migration</li>
+                            <li>Unit Testing</li>
+
                         </ul>
                     </div>
                     <div class="vr"></div>
                     <div>
                         <b>Tools/Methods Used: </b>
-                        <div style="display: flex; flex-direction: row;">
+                        <div class="responsiveLists">
                             <ul>
                                 <li>Java</li>
                                 <li>SpringBoot</li>
@@ -417,15 +438,37 @@
                                 <li>KnockoutJS, Handlebar.js</li>
                             </ul>
                             <ul>
-                                <li>VS Solutions</li>
-                                <li>Jasmine, Karma</li>
+                                <li>Visual Studio Solutions</li>
+                                <li>Jasmine/Karma/JUnit Testing</li>
                                 <li>Kubernetes</li>
-                                <li>Helm, Shell Scripting</li>
+                                <li>Helm Charts</li>
+                                <li>Agile Methodologies</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <h3 style="text-align: center; margin-top: 0;">Project Details</h3>
+                <div class="third-div">
+                    <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
+                    <h4 style="margin: 0;">My Contributions</h4>
+                    What I contributed to this product so far:
+                    <ul style="display: inline;">
+                        <li>I improved the usability of existing versions of ZFP, by enhancing UI features used to
+                            manipulate the diagnostic images.</li>
+                        <li>Based on architecture and design discussions, I integrated ZFP with the required identity
+                            providers.</li>
+                        <li>I migrated APIs and features implemented in previous versions of ZFP, from the .NET
+                            framework to Java.</li>
+                        <li>I enhanced text translations, labelling, zooming, image manipulations, and other annotations
+                            on the front-end to make them universal, and more intuitive to use.</li>
+                        <li>I implemented <u><a
+                                    href="https://wiki.ihe.net/index.php/Audit_Trail_and_Node_Authentication"
+                                    class="links">Audit Logging</a></u> for the product as per IHE requirements, to
+                            ensure patient information confidentiality.</li>
+                        <li>I owned and implemented a new feature to save manipulations and annotations on DICOM images.
+                        </li>
+                        <li>I fixed over 50 bugs, defects, and customer-raised issues.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="projectInfo-div" id="ab-info">
@@ -514,7 +557,7 @@
                     <div class="vr"></div>
                     <div>
                         <b>Tools/Methods Used: </b>
-                        <div style="display: flex; flex-direction: row;">
+                        <div class="responsiveLists">
                             <ul>
                                 <li>ReactJS</li>
                                 <li>Python + PLY</li>
@@ -533,7 +576,7 @@
                     </div>
                 </div>
                 <div class="third-div">
-                    <h3 style="text-align: center; margin-top: 0;">Project Details</h3>
+                    <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
                     <h4 style="margin: 0;">Motivation</h4>
                     Often, when learning to program, students struggle with learning the many rules of syntax.
                     Writing syntactically correct programs right from the beginning can result in a cognitive load on
@@ -566,7 +609,7 @@
                             <img src="images/Work/AryaBota/AryaBota.gif" class="inline-image" />
                         </div>
                     </div>
-                    <br><br>
+                    <br>
                     <h4 style="margin: 0;">Formative Study</h4>
                     We engaged in an iterative design process exploring different pedagogies, which we introduced
                     middle-school students aged between 12-16 years.
@@ -616,11 +659,19 @@
             <div class="info-div">
                 <div class="first-div">
                     <div class="title">
-                        <h2>Know-Your-Customer</h2><br />Internship &middot; Fullstack Development
+                        <h2>Unified Customer Master: Know-Your-Customer</h2><br />Front-End Development &middot; UI/UX
+                        &middot; Software Engineering &middot; Data Management
                     </div>
                     <div class="description">
                         <h3>Description</h3>
-                        A brief intoduction to this project.
+                        <h4><b>What is UCM: KYC?</b></h4>
+                        Know-Your-Customer (KYC) is a bolt-on front end to GEHC's existing Unified Customer Master (UCM)
+                        application, to improve the quality of access and management of the company's customer data.
+                        <br><br>
+                        <h4><b>Who is UCM: KYC for?</b></h4>
+                        It is for internal use at GEHC's Digital Technology business, to help employees work with
+                        customer data through a user interface.
+                        <br>
                     </div>
                 </div>
                 <br />
@@ -628,29 +679,13 @@
             <div class="slideshow">
                 <div class="images-container">
                     <div class="mySlides3">
-                        <img src="images/Placeholders/bg.jpg" style="width:100%">
-                        <div class="text">Caption One</div>
+                        <img src="images/Placeholders/KYC-STOCK.jpg" style="width:100%">
+                        <div class="text">Improving access to customer data at GEHC</div>
                     </div>
-
-                    <div class="mySlides3">
-                        <img src="images/Placeholders/bg.jpg" style="width:100%">
-                        <div class="text">Caption Two</div>
-                    </div>
-
-                    <div class="mySlides3">
-                        <img src="images/Placeholders/bg.jpg" style="width:100%">
-                        <div class="text">Caption Three</div>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                    <!-- <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a> -->
                 </div>
                 <br>
-                <!-- <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div> -->
             </div>
             <div class="details-div">
                 <div class="second-div">
@@ -658,35 +693,65 @@
                         <b>Project Context: </b>
                         <ul>
                             <li>Jan 2020 – Sep 2020</li>
-                            <li>Software Engineering Internt</li>
+                            <li>Software Engineering Intern</li>
                             <li>GE Healthcare, Digital Technology</li>
                         </ul>
                     </div>
                     <div class="vr"></div>
                     <div>
                         <b>Roles & Responsibilities: </b>
-                        <ul>
-                            <li>To be added
-                        </ul>
+                        <div class="responsiveLists">
+                            <ul>
+                                <li>Front-End Development</li>
+                                <li>API Implementation</li>
+                                <li>User Workflows</li>
+                                <li>Testing and Validation</li>
+                            </ul>
+                            <ul>
+                                <li>Bug Fixing</li>
+                                <li>MVP-1 Release</li>
+                                <li>Knowledge Transfer to New Team</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="vr"></div>
                     <div>
                         <b>Tools/Methods Used: </b>
-                        <div style="display: flex; flex-direction: row;">
+                        <div class="responsiveLists">
                             <ul>
                                 <li>ReactJS</li>
                                 <li>Node.js</li>
-                                <li>ES6</li>
+                                <li>Javascript/ES6</li>
                             </ul>
                             <ul>
                                 <li>AWS</li>
                                 <li>Agile Development</li>
-                                <li>Rally</li>
+                                <li>Rally: Project Management</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <h3 style="text-align: center; margin-top: 0;">Project Details</h3>
+                <div class="third-div">
+                    <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
+                    <h4 style="margin: 0;">My Contributions</h4>
+                    What I contributed to this product:
+                    <ul style="display: inline;">
+                        <li>I collaborated with UX designers to design and implement 12 screens in the product.</li>
+                        <li>I owned and executed the development of user workflows within the application.</li>
+                        <li>I built 9 reusable UI components that are utilized in multiple screens and workflows.</li>
+                        <li>I helped integrate the product with third-party APIs.</li>
+                        <li>I participated in the verification and validation cycle for the product, and fixed various bugs and defects raised by the testing teams.</li>
+                        <li>I contributed to releasing the first Minimal Viable Product of this tool.</li>
+                        <li>I conducted 3 knowledge-transfer sessions to new team members.</li>
+                    </ul>
+                    <br>
+                    <h4 style="margin: 0;">What I Learnt From This Product</h4>
+                    <ul style="display: inline;">
+                        <li>I learnt more about how to assess the usability of a product, and incorporate feedback to improve the user experience of the product.</li>
+                        <li>I learnt the process, and rationale that goes behind designing the UI and UX of any product.</li>
+                        <li>I learnt how to implement software engineering principles, particularly Agile methodologies, when developing a software product.</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
@@ -755,7 +820,7 @@
                     </div>
                 </div>
 
-                <h3 style="text-align: center; margin-top: 0;">Project Details</h3>
+                <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
             </div>
         </div>
         <div class="projectInfo-div" id="se-info">
@@ -831,7 +896,7 @@
                     </div>
                 </div>
             </div>
-            <h3 style="text-align: center; margin-top: 0;">Project Details</h3>
+            <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
         </div>
         <div class="projectInfo-div" id="volunteer-info">
             <br />
@@ -839,7 +904,7 @@
                 <div class="first-div">
                     <!-- <div style="display: flex; flex-direction: column;"> -->
                     <div class="title">
-                        <h2>Volunteerships</h2><br />Research &middot; Education
+                        <h2>Volunteering</h2><br />Research &middot; Education
                     </div>
                     <div class="description">
                         <h3>Description</h3>
@@ -900,7 +965,7 @@
                     <div class="vr"></div>
                     <div>
                         <b>Tools/Methods Used: </b>
-                        <div style="display: flex; flex-direction: row;">
+                        <div class="responsiveLists">
                             <ul>
                                 <li>Tools</li>
                             </ul>
@@ -908,7 +973,7 @@
                     </div>
                 </div>
                 <div class="third-div">
-                    <h3 style="text-align: center; margin-top: 0;">Project Details</h3>
+                    <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
                     <h4 style="margin: 0;">Motivation</h4>
                     TBA
                     <br><br>

@@ -129,6 +129,7 @@ body {
 .buttons {
     margin-top: -10px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .buttons .pageLinks-light {
@@ -292,7 +293,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: baseline;
-      /* max-width: 40%; */
+      width: 60%;
       /* line-height: 1.6; */
   }
 
@@ -326,7 +327,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 8% 0 8%;
+    align-items: center;
+    padding: 0 8%;
   }
 
   ul {
@@ -501,6 +503,11 @@ body {
     display: none;
 }
 
+.responsiveLists {
+    display: flex;
+    flex-direction: row;
+}
+
   @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
@@ -511,7 +518,7 @@ body {
     to {opacity: 1}
   }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
     .headerIcons-div a {
         display: none;
     }
@@ -554,6 +561,10 @@ body {
         width: 100%;
     }
 
+    .projectInfo-div .title {
+        width: 100%;
+    }
+
     .images-container {
         width: 90%;
     }
@@ -571,9 +582,17 @@ body {
         padding-top: 30px;
         border-top: 1px solid rgba(106, 106, 106, 0.3);
     }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .inline-image {
+        padding: 0;
+    }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
     .headerIcons-div.responsive {
         position: relative;
         padding-right: 30px;
@@ -596,5 +615,17 @@ body {
         display: block;
         padding-top: 30px;
         border-top: 1px solid rgba(106, 106, 106, 0.3);
+    }
+
+    .projectInfo-div .title {
+        width: 100%;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .inline-image {
+        padding: 0;
     }
 }
