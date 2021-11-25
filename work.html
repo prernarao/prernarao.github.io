@@ -536,11 +536,23 @@
                 <div class="second-div">
                     <div>
                         <b>Project Context: </b>
-                        <ul>
-                            <li>June 2021 - Present</li>
-                            <li>Passion Project</li>
-                            <li>Team Size: 4</li>
-                        </ul>
+                        <div class="responsiveLists">
+                            <ul>
+                                <li>June 2021 - Present</li>
+                                <li>Passion Project</li>
+                                <li>Mentors:
+                                    <ul style="margin-left: -11%;">
+                                        <li><u><a href="http://dccc.iisc.ac.in/vk.html" target="_blank"
+                                                    rel="noreferrer noopener" class="links">Dr. Viraj Kumar,
+                                                    IISc</a></u></li>
+                                        <li><u><a href="https://staff.pes.edu/nm1228" target="_blank"
+                                                    rel="noreferrer noopener" class="links">Prof. N.S. Kumar,
+                                                    PESU</a></u></li>
+                                    </ul>
+                                </li>
+                                <li>Team Size: 5</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="vr"></div>
                     <div>
@@ -566,9 +578,9 @@
                                 <li>Google Jamboard</li>
                             </ul>
                             <ul>
+                                <li>MongoDB</li>
                                 <li>Wireframing</li>
                                 <li>User Research</li>
-                                <li>Empathy Mapping</li>
                                 <li>Journey Mapping</li>
                                 <li>Usability Testing</li>
                             </ul>
@@ -577,6 +589,9 @@
                 </div>
                 <div class="third-div">
                     <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
+                    <h4 style="margin: 0;">Team Members:</h4>
+                    Prerna Rao, Varsha Venkatasubramanian, Vaani Sundaresh, Supriya R, Afreen A Noorani
+                    <br><br>
                     <h4 style="margin: 0;">Motivation</h4>
                     Often, when learning to program, students struggle with learning the many rules of syntax.
                     Writing syntactically correct programs right from the beginning can result in a cognitive load on
@@ -584,22 +599,106 @@
                     Additionally, for students who have minimal to no experience with technology, using an IDE
                     environment to learn programming concepts can seem intimidating.
                     <br>
-                    Inspired by Hedy's gradual approach to programming, this was a great opportunity for us to explore a
+                    In this regard, it was a great opportunity for us to explore a
                     better solution to improve CS-education for K-12 learners in India.
+                    <br>
+                    My team and I further studied the problem space, and decided on the problem statement we wanted to
+                    address.
                     <br><br>
-                    My team and I built this tool to introduce programming concepts through level-wise visual puzzles.
+                    <h4 style="margin: 0;">Problem Statement</h4>
+                    <h3 style="margin: 0; font-weight: 400;">
+                        "To create a visual programming environment to introduce children to problem-solving and
+                        programming concepts, while reducing syntax barriers."
+                    </h3>
+                    <br>
+                    As a solution, we chose to build AryaBota to introduce programming concepts in a visual and gamified
+                    manner, through level-wise puzzles.
                     With simplified commands that gradually progress to more Pythonic constructs, students can learn
-                    syntax at their own pace, while developing an
-                    understanding of basic programming concepts.
+                    syntax at their own pace, while developing an understanding of basic programming concepts.
                     <br><br>
                     <h4 style="margin: 0;">User and Pedagogy Research</h4>
-                    TBA<br>
-                    We researched existing pedagogical approaches to teaching introduction to programming.
-                    <br><br>
-                    <h4 style="margin: 0;">UI Design Process</h4>
-                    <img src="images/Work/AryaBota/chart.png" alt="Progress so far, in 5 steps">
-                    TBA
-                    <br><br>
+                    <div>
+                        We conducted our research in two broad phases –<br>
+                        A <b>primary research phase</b> where we dove deeper into existing programming pedagogies, and
+                        performed competitive analysis in this problem space.
+                        During this phase, we reviewed multiple papers, talks, and tools from which we drew the
+                        following conclusions:
+                        <ul style="margin: 0;">
+                            <li>At present, 'Introduction to Programming' is being taught extremely theoretically in
+                                most schools in India.</li>
+                            <li>Students face a cognitive load from having to learn syntax of programming languages.
+                            </li>
+                            <li>Visual and hands-on learning can improve students' interest in studying concepts.</li>
+                        </ul>
+
+                        <div class="details">
+                            <div class="details-text">
+                                <br>
+                                Inspired by the tools <u><b><a href="https://www.hedycode.com/" class="links"
+                                            target="_blank" rel="noreferrer noopener">Hedy</a></b></u> and <u><a
+                                        href="https://stanford.edu/~cpiech/karel/ide.html" class="links" target="_blank"
+                                        rel="noreferrer noopener"><b>Karel</b></a></u>, we decided to design a gamified
+                                solution to this problem.
+                            </div>
+                            <div>
+                                <img src="images/Work/AryaBota/Hedy-logo.png"
+                                    style="width: 30%; padding: 0 8%; height: fit-content;" />
+                                <img src="images/Work/AryaBota/karel-maze.png"
+                                    style="width: 30%; padding: 0 8%; height: fit-content;" />
+                            </div>
+                        </div>
+                        <br><br>
+                        This was followed by a <b>secondary research phase</b> where we identified our target audience
+                        (students aged 10-16), and built teacher/student personas for the same. This provided a
+                        foundation for us to conduct our UI/UX research and design.
+                    </div>
+                    <br>
+                    <!-- We researched existing pedagogical approaches to teaching introduction to programming. -->
+                    <h4 style="margin: 0;">UI and UX Design</h4>
+                    <h5 style="margin: 0;">UX Design Process</h5>
+                    The personas we built helped us design the flow of the solution, for a student learning to program,
+                    which we captured through the following <b>journey map</b>:
+                    <img src="images/Work/AryaBota/AryaBota_JourneyMap.jpg" width="100%"
+                        alt="Journey map in 4 phases: Explore, Solve, Revisit, Evaluate.">
+                    <br>
+                    <h5 style="margin: 0;">UI Design Process</h5>
+                    <div>
+                        For our UI, we engaged in an iterative design process that involved designing wireframes,
+                        mockups and multiple prototypes to
+                        reach our current stage. <br>
+                        <img src="images/Work/AryaBota/AryaBota_UI_Iteration.png" width="100%"
+                            alt="Progress so far, in 5 iterations." />
+                        <br>
+                        In the <b>first iteration</b>, we built a working skeleton of the tool that involved minimal
+                        features, and was not very intuitive to use.
+                        We had three vertical panes consisting – an input area, the transpiled Python
+                        code, and our grid with visual output.
+                        When we tested this prototype on a couple of users and gathered feedback, we realised our panes
+                        were not ordered optimally.
+                        The grid's <b>visual output seemed sidelined</b>, while the <b>transpiled Python code seemed to
+                        be highlighted</b>. Since our users were programming novices, this format seemed to confuse them further.
+                        <br><br>
+                        Over the next few iterations, I <b>redesigned the interface</b> to address these issues, and
+                        make the UI more intuitive.
+                        Additionally, I added support to make certain aspects of the UI <b>configurable by the user</b>.
+                        This included the ability to change the size of the font, the display colours, and
+                        showing/hiding the
+                        transpiled Python pane.
+                        This was done primarily to make the experience more accessible and comfortable for the user.
+                        <br>
+                        <img src="images/Work/AryaBota/AryaBota_JourneyMap.jpg" width="100%"
+                            alt="Journey map in 4 phases: Explore, Solve, Revisit, Evaluate.">
+                        <br><br>
+                        In its current stage, our UI consists of 3 main pages –
+                        <ol style="margin: 0;">
+                            <li>A login/registration page</li>
+                            <li>An about page</li>
+                            <li>The main programming environment / problem grid page</li>
+                        </ol>
+                        <img src="images/Work/AryaBota/AryaBota_JourneyMap.jpg" width="100%"
+                            alt="Journey map in 4 phases: Explore, Solve, Revisit, Evaluate.">
+                    </div>
+                    <br>
                     <h4 style="margin: 0;">Implementation</h4>
                     <div class="details">
                         <div class="details-text">
@@ -611,29 +710,31 @@
                     </div>
                     <br>
                     <h4 style="margin: 0;">Formative Study</h4>
-                    We engaged in an iterative design process exploring different pedagogies, which we introduced
-                    middle-school students aged between 12-16 years.
-                    We collected and analyzed their usage of the tool, conducted a usability and feedback survey, and a
+                    We introduced the first prototype of AryaBota to middle-school students (aged between 10-16 years).
+                    We then collected and analyzed their usage of the tool, conducted a usability and feedback survey,
+                    and a
                     follow-up interview with the facilitators.
-                    We then use this information to update and redesign AryaBota to better fit our target audience.
+                    We intend to use this information to redesign and improve AryaBota to better fit our target
+                    audience.
                     <br><br>
                     <h4 style="margin: 0;">Feedback Surveys</h4>
                     TBA
                     <br><br>
                     <h4 style="margin: 0;">Key Features</h4>
                     <ol>
-                        <li>Visual output of executed code</li>
-                        <li>Level-wise puzzles for different programming concepts</li>
-                        <li>Learning concepts through syntax progressions</li>
+                        <li>Visual output of executed code, via a robot (named AryaBota) in a grid that follows input
+                            commands</li>
+                        <li>Level-wise puzzles targeting different programming concepts in each level</li>
+                        <li>Learning concepts through gradual syntax progressions in order to reduce cognitive load</li>
                         <li>Backward and forward compatibility of level-wise syntax</li>
-                        <li>Choice to view/hide transpiled code</li>
+                        <li>Choice to view/hide transpiled Python code</li>
                         <li>Configurable problem grids</li>
                     </ol>
                     <h4 style="margin: 0;">Outcomes and Learnings</h4>
                     TBA
                     <br><br>
                     <h4 style="margin: 0;">Current State</h4>
-                    This project is a work in progress. We are currently collecting feedback from our users, to update
+                    This project is a work in progress. We are currently collecting feedback from our users, to improve
                     the UI and UX of the application.
                     Additionally, we are analyzing the data from our field deployments to make changes to our pedagogy,
                     and decide our next steps.
@@ -740,16 +841,20 @@
                         <li>I owned and executed the development of user workflows within the application.</li>
                         <li>I built 9 reusable UI components that are utilized in multiple screens and workflows.</li>
                         <li>I helped integrate the product with third-party APIs.</li>
-                        <li>I participated in the verification and validation cycle for the product, and fixed various bugs and defects raised by the testing teams.</li>
+                        <li>I participated in the verification and validation cycle for the product, and fixed various
+                            bugs and defects raised by the testing teams.</li>
                         <li>I contributed to releasing the first Minimal Viable Product of this tool.</li>
                         <li>I conducted 3 knowledge-transfer sessions to new team members.</li>
                     </ul>
                     <br>
                     <h4 style="margin: 0;">What I Learnt From This Product</h4>
                     <ul style="display: inline;">
-                        <li>I learnt more about how to assess the usability of a product, and incorporate feedback to improve the user experience of the product.</li>
-                        <li>I learnt the process, and rationale that goes behind designing the UI and UX of any product.</li>
-                        <li>I learnt how to implement software engineering principles, particularly Agile methodologies, when developing a software product.</li>
+                        <li>I learnt more about how to assess the usability of a product, and incorporate feedback to
+                            improve the user experience of the product.</li>
+                        <li>I learnt the process, and rationale that goes behind designing the UI and UX of any product.
+                        </li>
+                        <li>I learnt how to implement software engineering principles, particularly Agile methodologies,
+                            when developing a software product.</li>
                     </ul>
                 </div>
             </div>
@@ -1012,24 +1117,8 @@
                         </div>
                     </div>
                     <br><br>
-                    <h4 style="margin: 0;">Formative Study</h4>
-                    TBA
-                    <br><br>
-                    <h4 style="margin: 0;">Feedback Surveys</h4>
-                    TBA
-                    <br><br>
-                    <h4 style="margin: 0;">Key Features</h4>
-                    <ol>
-                        <li>TBA</li>
-                    </ol>
-                    <h4 style="margin: 0;">Outcomes and Learnings</h4>
-                    TBA
-                    <br><br>
-                    <h4 style="margin: 0;">Current State</h4>
-                    TBA
-                    <br>
-                    Do feel free to reach out to me if you would like to learn more about the current status of the
-                    project, I'd love to chat with you about it.
+                    Do feel free to reach out to me if you would like to learn more about the work we do at Project
+                    Sitara, I'd love to chat with you about it.
                 </div>
             </div>
         </div>

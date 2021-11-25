@@ -307,7 +307,7 @@ body {
     margin-bottom: 0;
   }
 
-  h4 {
+  h4, h5 {
     margin: 0;
   }
 
@@ -382,7 +382,7 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      padding: 2% 8%;
+      padding: 2% 15%;
       line-height: 1.6;
       column-gap: 10px;
       /* width: 45%; */
@@ -393,7 +393,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2% 11%;
+    padding: 2% 15%;
     line-height: 1.6;
     column-gap: 10px;
     text-align: justify;
