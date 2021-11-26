@@ -1,3 +1,5 @@
+window.onscroll = function () { scrollFunction() };
+
 function play() {
     var audio = document.getElementById("audio");
     audio.play();
@@ -13,8 +15,22 @@ function closeMenu() {
     document.getElementById("hamburgerMenu-dark") ? document.getElementById("hamburgerMenu-dark").style.width = "0%" : '';
 }
 
+function scrollFunction() {
+    var goToTop = document.getElementById("goToTop");
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        goToTop.style.display = "block";
+    } else {
+        goToTop.style.display = "none";
+    }
+}
+
+function goToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 function hideGrid(element) {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     document.getElementById("image-grid").style.display = "none";
     document.getElementById("top-div").style.display = "none";
     document.getElementById("backToGrid").style.display = "inline-block";
@@ -24,7 +40,7 @@ function hideGrid(element) {
 }
 
 function showGrid() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     document.getElementById("image-grid").style.display = "flex";
     document.getElementById("backToGrid").style.display = "none";
     document.getElementById("backToGrid2").style.display = "none";
@@ -66,6 +82,7 @@ function changeDisplayMode() {
         // document.getElementsByClassName("socialIcons-light")[0].className = "socialIcons-dark";
         document.getElementsByClassName("pageLinks-light")[0].className = "pageLinks-dark";
         document.getElementsByClassName("pageLinks-light")[0].className = "pageLinks-dark";
+        document.getElementsByClassName("pageLinks-light")[0].className = "pageLinks-dark";
     }
     else {
         modeIcon.className = "fa fa-moon-o";
@@ -89,6 +106,7 @@ function changeDisplayMode() {
         document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
         document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
         // document.getElementsByClassName("socialIcons-dark")[0].className = "socialIcons-light";
+        document.getElementsByClassName("pageLinks-dark")[0].className = "pageLinks-light";
         document.getElementsByClassName("pageLinks-dark")[0].className = "pageLinks-light";
         document.getElementsByClassName("pageLinks-dark")[0].className = "pageLinks-light";
     }

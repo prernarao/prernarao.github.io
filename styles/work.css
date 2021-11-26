@@ -406,6 +406,12 @@ body {
     height: fit-content;
   }
 
+  .inline-image-list {
+    width: 100%;
+    padding: 2% 8%;
+    height: fit-content;
+  }
+
   .details {
     display: flex;
     flex-direction: row;
@@ -508,6 +514,28 @@ body {
     flex-direction: row;
 }
 
+#goToTop {
+    display: none;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    z-index: 99;
+    height: fit-content;
+    font-size: 17px;
+    background-color: whitesmoke;
+    color: #1A202C;
+    border: #1A202C solid 1.5px;
+    cursor: pointer;
+    padding: 4px 9px;
+    border-radius: 4px;
+  }
+
+  #goToTop:hover {
+    background-color: #1A202C;
+    color: whitesmoke;
+    border: whitesmoke solid 1.5px;
+  }
+
   @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
@@ -587,7 +615,7 @@ body {
         flex-direction: column;
     }
 
-    .inline-image {
+    .inline-image, .inline-image-list {
         padding: 0;
     }
 }
@@ -625,7 +653,7 @@ body {
         flex-direction: column;
     }
 
-    .inline-image {
+    .inline-image, .inline-image-list {
         padding: 0;
     }
 }

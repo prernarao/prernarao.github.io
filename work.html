@@ -477,7 +477,8 @@
                 <div class="first-div">
                     <!-- <div style="display: flex; flex-direction: column;"> -->
                     <div class="title">
-                        <h2>AryaBota</h2><br />Research &middot; CS Education &middot; User Experience &middot;
+                        <h2>AryaBota</h2>
+                        <br />Research &middot; CS Education &middot; User Experience &middot;
                         Gamified Learning &middot; Fullstack Development
                     </div>
                     <div class="description">
@@ -503,23 +504,33 @@
             <div class="slideshow">
                 <div class="images-container">
                     <div class="mySlides6">
-                        <img src="images/Work/AryaBota/Screenshot (944).png" style="width:100%">
+                        <img src="images/Work/AryaBota/AryaBota.gif" style="width:100%">
+                        <div class="text">AryaBota in action</div>
+                    </div>
+
+                    <div class="mySlides6">
+                        <img src="images/Work/AryaBota/Screenshot (945).png" style="width:100%">
                         <div class="text">Landing Page</div>
                     </div>
 
                     <div class="mySlides6">
-                        <img src="images/Work/AryaBota/GIF.gif" style="width:100%">
+                        <img src="images/Work/AryaBota/Colour_Boundary.gif" style="width:100%">
                         <div class="text">Colour The Boundary</div>
                     </div>
 
                     <div class="mySlides6">
-                        <img src="images/Work/AryaBota/Count_Coins.png" style="width:100%">
+                        <img src="images/Work/AryaBota/Count_Coins.gif" style="width:100%">
                         <div class="text">Count The Coins</div>
                     </div>
 
                     <div class="mySlides6">
-                        <img src="images/Work/AryaBota/Syntax_Error.png" style="width:100%">
-                        <div class="text">Syntax Error!</div>
+                        <img src="images/Work/AryaBota/Syntax_Error.gif" style="width:100%">
+                        <div class="text">Syntax Errors!</div>
+                    </div>
+
+                    <div class="mySlides6">
+                        <img src="images/Work/AryaBota/UI_Configs.gif" style="width:100%">
+                        <div class="text">Configurable UI</div>
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
@@ -647,7 +658,7 @@
                                     style="width: 30%; padding: 0 8%; height: fit-content;" />
                             </div>
                         </div>
-                        <br><br>
+                        <br>
                         This was followed by a <b>secondary research phase</b> where we identified our target audience
                         (students aged 10-16), and built teacher/student personas for the same. This provided a
                         foundation for us to conduct our UI/UX research and design.
@@ -656,10 +667,13 @@
                     <!-- We researched existing pedagogical approaches to teaching introduction to programming. -->
                     <h4 style="margin: 0;">UI and UX Design</h4>
                     <h5 style="margin: 0;">UX Design Process</h5>
-                    The personas we built helped us design the flow of the solution, for a student learning to program,
-                    which we captured through the following <b>journey map</b>:
+                    <div>
+                        The personas we built helped us design the flow of the solution, for a student learning to
+                        program,
+                        which we captured through the following <b>journey map</b>:</div>
                     <img src="images/Work/AryaBota/AryaBota_JourneyMap.jpg" width="100%"
                         alt="Journey map in 4 phases: Explore, Solve, Revisit, Evaluate.">
+                            <!-- <img src="images/Work/AryaBota/aryabota-icon.jpeg" style="border-radius: 50%; padding: 0 8%; height: 5%;"/> -->
                     <br>
                     <h5 style="margin: 0;">UI Design Process</h5>
                     <div>
@@ -676,49 +690,99 @@
                         When we tested this prototype on a couple of users and gathered feedback, we realised our panes
                         were not ordered optimally.
                         The grid's <b>visual output seemed sidelined</b>, while the <b>transpiled Python code seemed to
-                        be highlighted</b>. Since our users were programming novices, this format seemed to confuse them further.
+                            be highlighted</b>. Since our users were programming novices, this format seemed to confuse
+                        them further.
                         <br><br>
-                        Over the next few iterations, I <b>redesigned the interface</b> to address these issues, and
+                        Over the next few iterations, with feedback from a diverse audience, I <b>redesigned the
+                            interface</b> to address these issues, and
                         make the UI more intuitive.
                         Additionally, I added support to make certain aspects of the UI <b>configurable by the user</b>.
                         This included the ability to change the size of the font, the display colours, and
-                        showing/hiding the
-                        transpiled Python pane.
+                        showing/hiding the transpiled Python pane.
                         This was done primarily to make the experience more accessible and comfortable for the user.
                         <br>
-                        <img src="images/Work/AryaBota/AryaBota_JourneyMap.jpg" width="100%"
+                        <img src="images/Work/AryaBota/Wireframes.png" width="100%"
                             alt="Journey map in 4 phases: Explore, Solve, Revisit, Evaluate.">
                         <br><br>
                         In its current stage, our UI consists of 3 main pages –
                         <ol style="margin: 0;">
-                            <li>A login/registration page</li>
-                            <li>An about page</li>
-                            <li>The main programming environment / problem grid page</li>
+                            <li>
+                                <div class="details">
+                                    <div class="details-text">
+                                        <b>A landing page:</b>
+                                        <br>
+                                        Here, users are requested to register (or sign in, for existing users).
+                                        <br>
+                                        New users are also asked to fill a registration form, through which we collect
+                                        anonymised data for our research.
+                                    </div>
+                                    <div>
+                                        <img src="images/Work/AryaBota/Mockup_Landing.png" class="inline-image-list" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="details">
+                                    <div class="details-text">
+                                        <b>A home page (design to be finalised):</b>
+                                        <br>
+                                        The homepage provides a brief introduction to AryaBota, and links to the
+                                        documentation/tutorial for additional information.
+                                        <br>
+                                        It also contains a link to the main programming environment.
+                                    </div>
+                                    <div>
+                                        <img src="images/Work/AryaBota/Mockup_Home.png" class="inline-image-list" />
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="details">
+                                    <div class="details-text">
+                                        <b>AryaBota's programming environment:</b>
+                                        <br>
+                                        This is the main programming environment, where all the learning takes place.
+                                        <br>
+                                        This consists of a level map, UI configuration toolbar, input code editor,
+                                        problem grid, and transpiled Python code.
+                                    </div>
+                                    <div>
+                                        <img src="images/Work/AryaBota/Mockup_Grid.png" class="inline-image-list" />
+                                    </div>
+                                </div>
+                            </li>
                         </ol>
-                        <img src="images/Work/AryaBota/AryaBota_JourneyMap.jpg" width="100%"
-                            alt="Journey map in 4 phases: Explore, Solve, Revisit, Evaluate.">
                     </div>
                     <br>
-                    <h4 style="margin: 0;">Implementation</h4>
-                    <div class="details">
-                        <div class="details-text">
-                            TBA
-                        </div>
-                        <div>
-                            <img src="images/Work/AryaBota/AryaBota.gif" class="inline-image" />
-                        </div>
-                    </div>
-                    <br>
-                    <h4 style="margin: 0;">Formative Study</h4>
-                    We introduced the first prototype of AryaBota to middle-school students (aged between 10-16 years).
+                    <h4 style="margin: 0;">Formative Study and Testing</h4>
+                    <!-- We deployed our React based UI on Vercel, and hosted our Python backend on Heroku. -->
+                    We introduced the first prototype of AryaBota to middle-school students (aged between 14-16 years),
+                    via a workshop in New Delhi, India.
+                    This workshop was led by a facilitator who introduced the students to various progamming concepts in
+                    Python, using AryaBota.
                     We then collected and analyzed their usage of the tool, conducted a usability and feedback survey,
-                    and a
-                    follow-up interview with the facilitators.
+                    and a follow-up interview with the facilitator.
                     We intend to use this information to redesign and improve AryaBota to better fit our target
                     audience.
                     <br><br>
-                    <h4 style="margin: 0;">Feedback Surveys</h4>
-                    TBA
+                    <h4 style="margin: 0;">Feedback and Enhancements</h4>
+                    We received the following feedback from our interviews and surveys:
+                    <ul style="margin: 0;">
+                        <li>The facilitator was comfortable teaching with AryaBota, and would
+                            use it again ✅</li>
+                        <li>Students enjoyed the visual aspect of the tool ✅</li>
+                        <li>Students understood basics of instructional thinking ✅</li>
+                        <li>Students were confident with variables and assignment in
+                            programming ✅</li>
+                        <li>Creating additional problem grids/questions was quick and easy</li>
+                        <li>There needs to be wider range of puzzles, in order to provide more
+                            practice 🔁</li>
+                        <li>Only relevant aspects of the transpiled Python code can be
+                            highlighted in order to avoid confusion 🔁</li>
+                    </ul>
+                    We are currently incorporating this feedback, along with enhancements to our UI, to be tested in
+                    upcoming workshops.
+                    These workshops will be conducted in December 2021, for students aged between 10-16 years.
                     <br><br>
                     <h4 style="margin: 0;">Key Features</h4>
                     <ol>
@@ -729,15 +793,18 @@
                         <li>Backward and forward compatibility of level-wise syntax</li>
                         <li>Choice to view/hide transpiled Python code</li>
                         <li>Configurable problem grids</li>
+                        <li>Support for input in other languages (Kannada/Kanglish) – <i>disabled in current
+                                prototype</i></li>
                     </ol>
-                    <h4 style="margin: 0;">Outcomes and Learnings</h4>
-                    TBA
-                    <br><br>
+                    <!-- <h4 style="margin: 0;">Outcomes and Learnings</h4>
+                    TBA -->
+                    <br>
                     <h4 style="margin: 0;">Current State</h4>
                     This project is a work in progress. We are currently collecting feedback from our users, to improve
                     the UI and UX of the application.
                     Additionally, we are analyzing the data from our field deployments to make changes to our pedagogy,
                     and decide our next steps.
+                    We eventually hope to support both, facilitator-led and independent learning.
                     <br>
                     <p style="display: inline;">AryaBota, in its current state, can be accessed at
                         <u><a href="https://aryabota.vercel.app/" class="links">https://aryabota.vercel.app/</a></u>
@@ -1125,6 +1192,7 @@
         <div onclick="showGrid()" id="backToGrid2" class="buttons" style="display: none;">
             <br /><a class="pageLinks-light">Go back to all projects</a><br /><br />
         </div>
+        <button onclick="goToTop()" id="goToTop" title="Go to top">⬆</button>
     </div>
     </div>
     </div>
