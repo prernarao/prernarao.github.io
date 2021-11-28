@@ -169,7 +169,7 @@
                         Development
                     </div>
                     <div class="description">
-                        <h3>Description</h3>
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
                         <h4><b>What is Sketch2HTML?</b></h4>
                         Sketch2HTML is a web application to convert a hand-drawn wireframe into a usable HTML webpage.
                         <br><br>
@@ -224,6 +224,7 @@
                         <ul>
                             <li>Jan 2020 – June 2020</li>
                             <li>PES University, Bangalore</li>
+                            <li>Mentor: Prof. Vidhu Rojit</li>
                             <li>Team Size: 3</li>
                         </ul>
                     </div>
@@ -238,7 +239,7 @@
                             </ul>
                             <ul>
                                 <li>Data Creation</li>
-                                <li>SVM Model Implementation</li>
+                                <li>Project Architecture</li>
                                 <li>Unit Testing</li>
                             </ul>
                         </div>
@@ -293,17 +294,33 @@
                         alt="Gantt Chart depicting the different phases of the Sketch2HTML project"
                         style="border: #1A202C dashed;" />
                     <br>
-                    <h4 style="margin: 0;">Implementation</h4>
-                    <p style="display: inline;">
-                        We created the input data manually, and augmented it with transformed images.
-                        We implemented the tool through these modules:<br>
-                        Object Detection, SVM with Sklearn, HTML Factory, Flask App, UI.
+                    <h4 style="margin: 0;">Literature Review</h4>
+                    <div>
+                        We conducted our research by reviewing papers and tools that covered image classification,
+                        wireframing, and webpage generation.
+                        We explored a few tools used to generate quick mockups like Weebly and Ionos (drag-and-drop
+                        website building).
                         <br>
-                        TBA
+                        However, it was around this time that Microsoft released the beta version of it's <u><a
+                                href="https://sketch2code.azurewebsites.net/" class="links">Sketch2Code</a></u>
+                        application.
+                        This seemed more relevant to our research, and was closer to the approach we were leaning
+                        towards.
+                        <br>Based on our research, we decided to create Sketch2HTML (previously simply named, HTML
+                        Generator), a tool that allows input in the form of hand-drawn images, or digitized wireframes,
+                        and generates the desired HTML page.
+                    </div>
+                    <br>
+                    <h4 style="margin: 0;">Implementation</h4>
+                    I created the input data manually, and augmented it with transformed images.
+                    We then implemented the tool through these modules:
+                    Object Detection, SVM with Sklearn, HTML Factory to classify elements, Flask App, UI.
+                    <img src="images/Work/Sketch2HTML/DesignDescription.png" />
+                    <br>
                     <h4 style="margin: 0;">Key Features</h4>
                     <div class="details">
                         <div class="details-text">
-                            <ul>
+                            <ul style="margin: 0;">
                                 <li>Upload hand-drawn images through UI</li>
                                 <li>Convert these images to HTML</li>
                                 <li>Preview generated HTML page</li>
@@ -312,17 +329,17 @@
                             </ul>
                         </div>
                         <div>
-                            <img src="images/Placeholders/bg.jpg" class="inline-image" />
+                            <img src="images/Work/Sketch2HTML/HTML-1.png" class="inline-image" />
                         </div>
                         <br>
                     </div>
                     <h4 style="margin: 0;">My Contribution</h4>
-                    <ul>
-                        <li>Designing and implementing UI/UX</li>
-                        <li>Creating and transforming input data</li>
-                        <li>Implementing object detection</li>
-                        <li>Writing unit tests for the UI</li>
-                        <li>Documentation and presentation</li>
+                    <ul style="margin: 0;">
+                        <li>Designing and implementing the UI/UX of the application</li>
+                        <li>Creating and transforming various elements/pages as input data</li>
+                        <li>Implementing object detection, to identify elements on a page</li>
+                        <li>Writing unit tests for the UI using Selenium Web Driver</li>
+                        <li>Creating the roadmap and documentation, and presenting the final application</li>
                     </ul>
                     <br>
                     <h4 style="margin: 0;">Testing</h4>
@@ -334,7 +351,7 @@
                         <u><a href="docs/Sketch2Html_ProjectReport.pdf" target="_blank" rel="noreferrer noopener"
                                 class="links">docs/Sketch2Html_ProjectReport.pdf</a></u>.
                         <br>
-                        Alternatively, you can check out the repository at
+                        Alternatively, you can take a look at the code repository at
                         <u><a href="https://github.com/prernarao/Sketch2HTML"
                                 class="links">https://github.com/prernarao/Sketch2HTML</a></u>
                     </p>
@@ -354,11 +371,14 @@
             <div class="info-div">
                 <div class="first-div">
                     <div class="title">
-                        <h2>Zero-Footprint Viewer</h2><br />Healthcare/Clinical Imaging &middot; Fullstack Development
+                        <h2>Zero-Footprint Viewer</h2>
+                        <span style="font-size: small;">Note: GE Healthcare's intellectual property is strictly
+                            confidential and has been highly abstracted here.</span>
+                        <br />Healthcare/Clinical Imaging &middot; Fullstack Development
                         &middot; Software Engineering
                     </div>
                     <div class="description">
-                        <h3>Description</h3>
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
                         <h4><b>What is Zero-Footprint Viewer?</b></h4>
                         The Zero-Footprint Viewer (ZFP) is a ubiquitous, platform-independent web application to view
                         and manipulate clinical images.
@@ -381,18 +401,13 @@
             <div class="slideshow">
                 <div class="images-container">
                     <div class="mySlides2">
-                        <img src="images/Placeholders/SE-3.png" style="width:100%">
-                        <div class="text">Caption One</div>
+                        <img src="images/Work/ZFP/Screenshot (934).png" style="width:100%">
+                        <div class="text">Zero-Footprint Viewer</div>
                     </div>
 
                     <div class="mySlides2">
-                        <img src="images/Placeholders/SE-3.png" style="width:100%">
-                        <div class="text">Caption Two</div>
-                    </div>
-
-                    <div class="mySlides2">
-                        <img src="images/Placeholders/SE-3.png" style="width:100%">
-                        <div class="text">Caption Three</div>
+                        <img src="images/Work/ZFP/ZFP-1.png" style="width:100%">
+                        <div class="text">Login Page</div>
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -482,7 +497,7 @@
                         Gamified Learning &middot; Fullstack Development
                     </div>
                     <div class="description">
-                        <h3>Description</h3>
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
                         <h4><b>What is AryaBota?</b></h4>
                         AryaBota is a gradual and tolerant environment, to teach programming concepts through level-wise
                         puzzles.
@@ -494,7 +509,14 @@
                         <br><br>
                         <h4><b>Who is AryaBota for?</b></h4>
                         AryaBota is aimed towards K-12 students with minimal programming experience.
-                        <br>
+                        <br><br>
+                        <h4><b>Live Prototype: </b>
+                            <u><a href="https://aryabota.vercel.app/" target="_blank" rel="noreferrer noopener"
+                                    style="font-weight: normal" class="links">
+                                    https://aryabota.vercel.app/
+                                </a></u>
+                        </h4>
+                        <!-- <br> -->
                     </div>
                 </div>
                 <!-- <div><img height="80%" src="images/Work/AryaBota/aryabota-logo.png"></div> -->
@@ -572,9 +594,10 @@
                             <li>User Research</li>
                             <!-- <li>User Interviews</li> -->
                             <li>Pedagogy Research</li>
-                            <li>UI Design and Development</li>
+                            <li>UI/UX Design & Development</li>
                             <li>Backend Development</li>
                             <li>Tool Evaluation</li>
+                            <li>Data Analysis</li>
                         </ul>
                     </div>
                     <div class="vr"></div>
@@ -673,7 +696,7 @@
                         which we captured through the following <b>journey map</b>:</div>
                     <img src="images/Work/AryaBota/AryaBota_JourneyMap.jpg" width="100%"
                         alt="Journey map in 4 phases: Explore, Solve, Revisit, Evaluate.">
-                            <!-- <img src="images/Work/AryaBota/aryabota-icon.jpeg" style="border-radius: 50%; padding: 0 8%; height: 5%;"/> -->
+                    <!-- <img src="images/Work/AryaBota/aryabota-icon.jpeg" style="border-radius: 50%; padding: 0 8%; height: 5%;"/> -->
                     <br>
                     <h5 style="margin: 0;">UI Design Process</h5>
                     <div>
@@ -785,7 +808,7 @@
                     These workshops will be conducted in December 2021, for students aged between 10-16 years.
                     <br><br>
                     <h4 style="margin: 0;">Key Features</h4>
-                    <ol>
+                    <ol style="margin: 0;">
                         <li>Visual output of executed code, via a robot (named AryaBota) in a grid that follows input
                             commands</li>
                         <li>Level-wise puzzles targeting different programming concepts in each level</li>
@@ -827,11 +850,14 @@
             <div class="info-div">
                 <div class="first-div">
                     <div class="title">
-                        <h2>Unified Customer Master: Know-Your-Customer</h2><br />Front-End Development &middot; UI/UX
+                        <h2>Unified Customer Master: Know-Your-Customer</h2>
+                        <span style="font-size: small;">Note: GE Healthcare's intellectual property is strictly
+                            confidential and has been highly abstracted here.</span>
+                        <br />Front-End Development &middot; UI/UX
                         &middot; Software Engineering &middot; Data Management
                     </div>
                     <div class="description">
-                        <h3>Description</h3>
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
                         <h4><b>What is UCM: KYC?</b></h4>
                         Know-Your-Customer (KYC) is a bolt-on front end to GEHC's existing Unified Customer Master (UCM)
                         application, to improve the quality of access and management of the company's customer data.
@@ -903,7 +929,7 @@
                     <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
                     <h4 style="margin: 0;">My Contributions</h4>
                     What I contributed to this product:
-                    <ul style="display: inline;">
+                    <ul style="display: inline; margin: 0;">
                         <li>I collaborated with UX designers to design and implement 12 screens in the product.</li>
                         <li>I owned and executed the development of user workflows within the application.</li>
                         <li>I built 9 reusable UI components that are utilized in multiple screens and workflows.</li>
@@ -915,7 +941,7 @@
                     </ul>
                     <br>
                     <h4 style="margin: 0;">What I Learnt From This Product</h4>
-                    <ul style="display: inline;">
+                    <ul style="display: inline; margin: 0;">
                         <li>I learnt more about how to assess the usability of a product, and incorporate feedback to
                             improve the user experience of the product.</li>
                         <li>I learnt the process, and rationale that goes behind designing the UI and UX of any product.
@@ -935,7 +961,7 @@
                         <h2>Installed-Base Repository</h2><br />Internship &middot; Fullstack Development
                     </div>
                     <div class="description">
-                        <h3>Description</h3>
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
                         A brief intoduction to this project.
                     </div>
                 </div>
@@ -1003,7 +1029,7 @@
                         <h2>Tomatoz - Restaurant Management</h2><br />College &middot; Fullstack Development
                     </div>
                     <div class="description">
-                        <h3>Description</h3>
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
                         A brief intoduction to this project.
                     </div>
                 </div>
@@ -1079,7 +1105,7 @@
                         <h2>Volunteering</h2><br />Research &middot; Education
                     </div>
                     <div class="description">
-                        <h3>Description</h3>
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
                         <h4><b>Role</b></h4>
                         TBA
                         <br><br>
