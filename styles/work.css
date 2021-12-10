@@ -306,6 +306,11 @@ body {
   h2 {
     margin-bottom: 0;
   }
+ 
+  .details-text-volunteer h4 {
+    margin: 0;
+    text-decoration: none;
+  }
 
   h4 {
     margin: 0;
@@ -427,6 +432,11 @@ body {
   .details-text {
     min-width: 50%;
     text-align: justify;
+  }
+
+  .details-text-volunteer {
+      width: 150vw;
+      text-align: justify;
   }
   /* .column img:hover {
     filter: blur(2px);
@@ -656,6 +666,10 @@ body {
     .inline-image, .inline-image-list {
         padding: 0;
     }
+
+    .details-text, .details-text-volunteer {
+        width: 100%;
+      }
 
     .otro-blockquote {
         width: 95%;
