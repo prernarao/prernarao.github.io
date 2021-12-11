@@ -418,6 +418,13 @@ body {
     height: fit-content;
   }
 
+  .youtube {
+    width: 33vw;
+    padding: 0 8%;
+    height: 100%;
+    border: none;
+  }
+
   .inline-image-list {
     width: 100%;
     padding: 2% 8%;
@@ -667,6 +674,13 @@ body {
         padding: 0;
     }
 
+    .youtube {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: none;
+      }
+
     .details-text, .details-text-volunteer {
         width: 100%;
       }
@@ -722,4 +736,11 @@ body {
     .inline-image, .inline-image-list {
         padding: 0;
     }
+
+    .youtube {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        border: none;
+      }
 }
