@@ -99,7 +99,7 @@
         </div>
     </div>
     <div class="gallery" id="gallery" onclick="closeMenu()">
-        <h3 id="top-div">Here is some of my work :)</h3>
+        <h3 id="top-div">Here is some of my selected work 😄</h3>
         <div onclick="showGrid()" id="backToGrid" class="buttons" style="display: none;">
             <br /><a class="pageLinks-light">All Projects</a><br />
         </div>
@@ -112,7 +112,7 @@
                         <div class="proj-name">AryaBota</div>
                     </div>
                 </div>
-                <p>Gradual programming environment to teach programming concepts through level-wise puzzles</p>
+                <p><span class="proj-name-large"><b>AryaBota: </b></span>Gradual programming environment to teach programming concepts through level-wise puzzles</p>
                 <br />
                 <div class="container" id="zfp" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">GE Healthcare: Zero Footprint Viewer</div>
@@ -121,7 +121,7 @@
                         <div class="proj-name">GE Healthcare: Zero Footprint Viewer</div>
                     </div>
                 </div>
-                <p>A platform-independent web application to view and manipulate clinical images</p>
+                <p><span class="proj-name-large"><b>Zero Footprint Viewer: </b></span>Ubiquitous web application to view/manipulate clinical images</p>
             </div>
             <div class="column">
                 <div class="container" id="html" onclick="hideGrid(this)">
@@ -131,7 +131,7 @@
                         <div class="proj-name">Sketch2HTML</div>
                     </div>
                 </div>
-                <p>Web application to convert a hand-drawn wireframe into a downloadable HTML webpage</p>
+                <p><span class="proj-name-large"><b>Sketch2HTML: </b></span>Web application to convert a hand-drawn wireframe into a downloadable HTML webpage</p>
                 <br />
                 <div class="container" id="kyc" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">GE Healthcare: Know-Your-Customer</div>
@@ -140,7 +140,7 @@
                         <div class="proj-name">GE Healthcare: Know-Your-Customer</div>
                     </div>
                 </div>
-                <p>Front-end application to improve customer data access and management at GEHC.</p>
+                <p><span class="proj-name-large"><b>KYC: </b></span>Front-end application to improve data access and management at GEHC.</p>
             </div>
             <div class="column">
                 <div class="container" id="volunteer" onclick="hideGrid(this)">
@@ -150,7 +150,7 @@
                         <div class="proj-name">Community Service</div>
                     </div>
                 </div>
-                <p>Provision of inclusive and accessible education to learners from underserved communities</p>
+                <p><span class="proj-name-large"><b>Community Service: </b></span>Provision of inclusive and accessible education to underserved communities</p>
                 <!-- <div class="container" id="se" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">Restaurant Management</div>
                     <img src="images/Work/Tomatoz/SE-3.png" style="width:100%;">
@@ -270,16 +270,15 @@
                     <h4 style="margin: 0;">Motivation</h4>
                     The creative design process for a website begins with ideas describing the site's basic structure.
                     This is most often a mockup, sketch, or wireframe.
-                    <br>
                     The same usually stands for academia as well.
                     Someone learning web technologies will often use skeletal web pages or sketches.
-                    <br><br>
+                    <br>
                     With Sketch2HTML we aimed to speed up this process through a tool that understands and recognizes
                     specific elements, and translates them to HTML code.
                     <br><br>
                     <h4 style="margin: 0;">Design Solution</h4>
                     Sketch2HTML's design approach:
-                    <ul>
+                    <ul style="margin: 0;">
                         <li>Upload the hand-drawn sketch or wireframe to the UI.</li>
                         <li>Input image is preprocessed, i.e, all shapes are cropped, and noise is removed from the
                             image.</li>
@@ -306,7 +305,7 @@
                                 href="https://sketch2code.azurewebsites.net/" class="links">Sketch2Code</a></u>
                         application.
                         This seemed more relevant to our research, and was closer to the approach we were leaning
-                        towards.
+                        toward.
                         <br>Based on our research, we decided to create Sketch2HTML (previously simply named, HTML
                         Generator), a tool that allows input in the form of hand-drawn images, or digitized wireframes,
                         and generates the desired HTML page.
@@ -315,13 +314,13 @@
                     <h4 style="margin: 0;">Implementation</h4>
                     I created the input data manually, and augmented it with transformed images.
                     We then implemented the tool through these modules:
-                    Object Detection, SVM with Sklearn, HTML Factory to classify elements, Flask App, UI.
+                    Object Detection, SVM with Sklearn, HTML Factory to classify elements, Flask App, User Interface.
                     <img src="images/Work/Sketch2HTML/DesignDescription.png" />
                     <br>
                     <h4 style="margin: 0;">Key Features</h4>
                     <div class="details">
                         <div class="details-text">
-                            <ul style="margin: 0;">
+                            <ul>
                                 <li>Upload hand-drawn images through UI</li>
                                 <li>Convert these images to HTML</li>
                                 <li>Preview generated HTML page</li>
@@ -654,7 +653,7 @@
                     <h4 style="margin: 0;">Problem Statement</h4>
                     <!-- <h3 style="margin: 0; font-weight: 400;"> -->
                     <blockquote class="otro-blockquote">
-                        To create a visual programming environment to introduce children to problem-solving and
+                        To create a visual programming environment that introduces children to problem-solving and
                         programming concepts, while reducing syntax barriers.
                     </blockquote>
                     <!-- </h3> -->
@@ -792,15 +791,20 @@
                     </div>
                     <br>
                     <h4 style="margin: 0;">Formative Study and Testing</h4>
-                    <!-- We deployed our React based UI on Vercel, and hosted our Python backend on Heroku. -->
-                    We introduced the first prototype of AryaBota to middle-school students (aged between 14-16 years),
-                    via a workshop in New Delhi, India.
-                    This workshop was led by a facilitator who introduced the students to various progamming concepts in
-                    Python, using AryaBota.
-                    We then collected and analyzed their usage of the tool, conducted a usability and feedback survey,
-                    and a follow-up interview with the facilitator.
-                    We intend to use this information to redesign and improve AryaBota to better fit our target
-                    audience.
+                    <div>
+                        <!-- We deployed our React based UI on Vercel, and hosted our Python backend on Heroku. -->
+                        We introduced the first prototype of AryaBota to middle-school students (aged between 10-16
+                        years), via two workshops in New Delhi, India.
+                        These workshops were conducted over a period of 5 days, led by a facilitator who introduced the
+                        students to various progamming concepts in Python, using AryaBota.
+                        We then collected and analyzed their usage of the tool, conducted a usability and feedback
+                        survey, and a follow-up interview with the facilitator.
+                        We intend to use this information to redesign and improve AryaBota to better fit our target
+                        audience.
+                        <br>
+                        <i>A research paper comprising our initial findings and describing the tool is
+                            currently <b>under submission.</b></i>
+                    </div>
                     <img src="images/Work/AryaBota/IPS678.jpeg" width="75%" class="ips678" style="align-self: center;"
                         alt="Workshop conducted using AryaBota">
                     <br>
@@ -811,17 +815,20 @@
                             use it again ✅</li>
                         <li>Students enjoyed the visual aspect of the tool ✅</li>
                         <li>Students understood basics of instructional thinking ✅</li>
-                        <li>Students were confident with variables and assignment in
+                        <li>Students were confident with variables, assignment, and arithmetic in
                             programming ✅</li>
                         <li>Creating additional problem grids/questions was quick and easy ✅</li>
                         <li>There needs to be wider range of puzzles, in order to provide more
                             practice 🔁</li>
+                        <li>Include better, more detailed documentation or tutorials to support unguided learning 🔁
+                        </li>
                         <li>Only relevant aspects of the transpiled Python code can be
                             highlighted in order to avoid confusion 🔁</li>
+                        <li>Support customised syntax transitions based on the students' programming experience 🔁</li>
                     </ul>
                     We are currently incorporating this feedback, along with enhancements to our UI, to be tested in
                     upcoming workshops.
-                    These workshops will be conducted in December 2021, for students aged between 10-16 years.
+                    These workshops will be conducted in January 2021, for students aged between 10-16 years.
                     <br><br>
                     <h4 style="margin: 0;">Key Features</h4>
                     <ol style="margin: 0;">
@@ -1128,7 +1135,7 @@
                         physical, socioeconomic, and cognitive needs.
                         <br><br>
                         <h4><b>Where do I work?</b></h4>
-                        At present, I work at <a class="links" href="https://projectsitara.org/" target="_blank"
+                        At present, I am on the core team at <a class="links" href="https://projectsitara.org/" target="_blank"
                             rel="noreferrer noopener"><b>Project Sitara Foundation</b></a>, a for-purpose, non-profit
                         education/edTech organisation working with children from underserved communities in Karnataka,
                         India.
@@ -1225,7 +1232,7 @@
                         <br>
                         I first worked as a volunteer to create TIKs for the grade 8 Math Syllabus, and am now leading
                         the engagement for the grade 9-10 Math and Science curriculum. Here, we brainstorm and document
-                        touch-feel, and sound based activities to explain the various concepts covered in the
+                        thought-experiments, or touch-feel, and sound based activities to explain the various concepts covered in the
                         textbooks. Additionally, we conduct internal reviews, with feedback from Vision Empower experts,
                         to analyze the feasibility of activities from the teacher's perspective.
                     </div>

@@ -521,11 +521,13 @@ body {
 }
 
 .heart {
-    color: rgba(67, 0, 105, 0.651);
+    color: #ff6584;
+    /* color: rgba(67, 0, 105, 0.651); */
 }
 
 .heart-dark {
-    color: rgba(173, 70, 233, 0.651);
+    color: #ff6584;
+    /* color: rgba(173, 70, 233, 0.651); */
 }
 
 .proj-name-responsive {
@@ -664,6 +666,11 @@ body {
         display: block;
         padding-top: 30px;
         border-top: 1px solid rgba(106, 106, 106, 0.3);
+    }
+
+    .proj-name-large {
+        font-weight: 600;
+        display: none;
     }
 
     .details {
