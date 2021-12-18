@@ -197,6 +197,16 @@ body {
     right: 10%;
 }
 
+.links {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+}
+
 .content {
     display: flex;
     padding: 6%;
