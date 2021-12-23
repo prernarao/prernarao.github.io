@@ -199,10 +199,21 @@ body {
 
 .links {
     text-decoration: none;
-    color: inherit;
+    color: rgb(9, 64, 136);
+
 }
 
 .links:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+}
+
+.about-content-dark .links {
+    text-decoration: none;
+    color: rgb(156, 190, 235);
+}
+
+.about-content-dark .links:hover {
     text-decoration: underline;
     text-underline-offset: 0.1em;
 }
@@ -237,7 +248,7 @@ body {
     /* font-family: 'Rubik', sans-serif; */
     font-family: Lato, Helvetica, Arial, sans-serif;
     max-width: 52%;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
     line-height: 1.6;
     min-width: 50%;
