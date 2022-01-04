@@ -25,6 +25,10 @@ body {
     /* font-weight: 300; */
 }
 
+.name-dark, .name-light {
+    padding: 1.4vw;
+}
+
 h2 {
     font-weight: 500;
 }
@@ -181,7 +185,7 @@ h2 {
 }
 
 .content .pageLinks-light {
-    padding: 7px 6px 4px 6px;
+    padding: 6px 6px 6px 6px;
     border-radius: 3px;
     color: black;
     border-style: solid;
