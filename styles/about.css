@@ -30,6 +30,10 @@ body {
     align-items: center;
 }
 
+.name-dark, .name-light {
+    padding: 1.4vw;
+}
+
 .name-light a{
     font-family: "Josefin Slab", Georgia, sans-serif;
     text-decoration: none;
@@ -297,6 +301,10 @@ body {
         right: 5%;
         display: block;
     }
+    
+    .name-dark, .name-light {
+        padding-left: 5vw;
+    }    
 
     .content {
         flex-direction: column;

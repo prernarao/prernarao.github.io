@@ -337,6 +337,10 @@ h2 {
         display: block;
     }
 
+    .name-dark, .name-light {
+        padding-left: 5vw;
+    }    
+
     .content {
         display: flex;
         flex-direction: column;
