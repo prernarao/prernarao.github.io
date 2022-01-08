@@ -429,6 +429,12 @@ body {
     border: none;
   }
 
+  .youtube-slide {
+    width: 100%;
+    height: 80%;
+    border: none;
+  }
+
   .inline-image-list {
     width: 100%;
     padding: 2% 8%;
@@ -695,6 +701,12 @@ body {
         padding: 0;
         border: none;
       }
+    
+  .youtube-slide {
+    width: 100%;
+    height: 20%;
+    border: none;
+  }
 
     .details-text, .details-text-volunteer {
         width: 100%;
