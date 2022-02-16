@@ -82,6 +82,11 @@ h2 {
     font-weight: 600;
 }
 
+.sitara:hover, .sitara-dark:hover, .gehc:hover, .gehc-dark:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+}
+
 .footer {
     position: absolute;
     padding: 15px;
