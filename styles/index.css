@@ -57,7 +57,7 @@ h2 {
     /* color: rgb(6, 101, 179); */
 }
 
-.gehc-dark, .heart-dark {
+.gehc-dark {
     font-family: "Josefin Slab", Georgia, sans-serif;
     text-decoration: none;
     color: rgb(63, 214, 63);
@@ -69,7 +69,8 @@ h2 {
 .sitara {
     font-family: "Josefin Slab", Georgia, sans-serif;
     text-decoration: none;
-    color: rgb(57, 16, 148);
+    color: #006b60;
+    /* rgb(57, 16, 148); */
     font-size: 1.3rem;
     font-weight: 600;
 }
@@ -77,12 +78,28 @@ h2 {
 .sitara-dark {
     font-family: "Josefin Slab", Georgia, sans-serif;
     text-decoration: none;
-    color: rgb(71, 150, 224);
+    color: #009a8b;
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-.sitara:hover, .sitara-dark:hover, .gehc:hover, .gehc-dark:hover {
+.uw {
+    font-family: "Josefin Slab", Georgia, sans-serif;
+    text-decoration: none;
+    color: #4b2e84;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.uw-dark {
+    font-family: "Josefin Slab", Georgia, sans-serif;
+    text-decoration: none;
+    color: #8f7cb2;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.sitara:hover, .sitara-dark:hover, .gehc:hover, .gehc-dark:hover, .uw:hover, .uw-dark:hover {
     text-decoration: underline;
     text-underline-offset: 0.1em;
 }
@@ -97,7 +114,11 @@ h2 {
 }
 
 .heart {
-    color: rgba(0, 105, 0, 0.651);
+    color: #006b60;
+}
+
+.heart-dark {
+    color: #009a8b;
 }
 
 .name-light a{
