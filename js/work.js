@@ -49,7 +49,7 @@ function showGrid() {
     document.getElementById("kyc-info").style.display = "none";
     document.getElementById("zfp-info").style.display = "none";
     document.getElementById("ibr-info").style.display = "none";
-    document.getElementById("se-info").style.display = "none";
+    document.getElementById("turntables-info").style.display = "none";
     document.getElementById("ab-info").style.display = "none";
     document.getElementById("volunteer-info").style.display = "none";
 }

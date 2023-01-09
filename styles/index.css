@@ -213,8 +213,10 @@ h2 {
 .content .pageLinks-light {
     padding: 6px 6px 6px 6px;
     border-radius: 3px;
+    margin-right: 6px;
     color: black;
     border-style: solid;
+    border-width: 2px;
     /* font-weight: bold; */
     text-decoration: none;
 }
@@ -230,8 +232,10 @@ h2 {
 .content .pageLinks-dark {
     padding: 7px 6px 4px 6px;
     border-radius: 3px;
+    margin-right: 6px;
     color: #E2E8F0;
     border-style: solid;
+    border-width: 2px;
     /* font-weight: 600; */
     text-decoration: none;
 }

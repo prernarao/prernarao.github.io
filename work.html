@@ -98,11 +98,41 @@
         </div>
     </div>
     <div class="gallery" id="gallery" onclick="closeMenu()">
-        <h3 id="top-div">Here is some of my selected work 😄</h3>
+        <h3 id="top-div">Selected Work</h3>
         <div onclick="showGrid()" id="backToGrid" class="buttons" style="display: none;">
             <br /><a class="pageLinks-light">All Projects</a><br />
         </div>
         <div class="image-grid" id="image-grid">
+            <div class="column">
+                <div class="container" id="turntables">
+                    <div class="proj-name-responsive">TurnTables</div>
+                    <img src="images/Illustrations/TurnTables.png" alt="TurnTables" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">TurnTables: Coming Soon!</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>TurnTables: </b></span>Coming Soon!</p>
+                <br />
+                <div class="container" id="volunteer" onclick="hideGrid(this)">
+                    <div class="proj-name-responsive">Education & EdTech</div>
+                    <img src="images/Illustrations/volunteer.png" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">Education & EdTech</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>Education & EdTech: </b></span>Provision of inclusive and accessible
+                    education to underserved communities</p>
+                <br />
+                <div class="container" id="zfp" onclick="hideGrid(this)">
+                    <div class="proj-name-responsive">GE Healthcare: Zero Footprint Viewer</div>
+                    <img src="images/Illustrations/medical.png" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">GE Healthcare: Zero Footprint Viewer</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>Zero Footprint Viewer: </b></span>Ubiquitous web application to
+                    view/manipulate clinical images</p>
+            </div>
             <div class="column">
                 <div class="container" id="ab" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">AryaBota</div>
@@ -114,17 +144,6 @@
                 <p><span class="proj-name-large"><b>AryaBota: </b></span>Gradual programming environment to teach
                     programming concepts through level-wise puzzles</p>
                 <br />
-                <div class="container" id="volunteer" onclick="hideGrid(this)">
-                    <div class="proj-name-responsive">Education & EdTech</div>
-                    <img src="images/Illustrations/volunteer.png" style="width:100%;">
-                    <div class="middle">
-                        <div class="proj-name">Education & EdTech</div>
-                    </div>
-                </div>
-                <p><span class="proj-name-large"><b>Education & EdTech: </b></span>Provision of inclusive and accessible
-                    education to underserved communities</p>
-            </div>
-            <div class="column">
                 <div class="container" id="html" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">Sketch2HTML</div>
                     <img src="images/Illustrations/prototype.png" alt="Sketch2HTML" style="width:100%;">
@@ -135,18 +154,6 @@
                 <p><span class="proj-name-large"><b>Sketch2HTML: </b></span>Web application to convert a hand-drawn
                     wireframe into a downloadable HTML webpage</p>
                 <br />
-                <div class="container" id="zfp" onclick="hideGrid(this)">
-                    <div class="proj-name-responsive">GE Healthcare: Zero Footprint Viewer</div>
-                    <img src="images/Illustrations/medical.png" style="width:100%;">
-                    <div class="middle">
-                        <div class="proj-name">GE Healthcare: Zero Footprint Viewer</div>
-                    </div>
-                </div>
-                <p><span class="proj-name-large"><b>Zero Footprint Viewer: </b></span>Ubiquitous web application to
-                    view/manipulate clinical images</p>
-
-            </div>
-            <div class="column">
                 <div class="container" id="kyc" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">GE Healthcare: Know-Your-Customer</div>
                     <img src="images/Illustrations/customers.png" style="width:100%;">
@@ -157,15 +164,28 @@
                 <p><span class="proj-name-large"><b>KYC: </b></span>Front-end application to improve data access and
                     management at GEHC.</p>
 
-                <!-- <div class="container" id="se" onclick="hideGrid(this)">
-                    <div class="proj-name-responsive">Restaurant Management</div>
-                    <img src="images/Work/Tomatoz/SE-3.png" style="width:100%;">
-                    <div class="middle">
-                        <div class="proj-name">Restaurant Management</div>
-                    </div>
-                    <p>Gradual programming environment to teach programming concepts through level-wise puzzles</p>
-                </div> -->
             </div>
+            <!-- <div class="column">
+                <div class="container" id="kyc" onclick="hideGrid(this)">
+                    <div class="proj-name-responsive">GE Healthcare: Know-Your-Customer</div>
+                    <img src="images/Illustrations/customers.png" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">GE Healthcare: Know-Your-Customer</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>KYC: </b></span>Front-end application to improve data access and
+                    management at GEHC.</p>
+
+                <div class="container" id="se" onclick="hideGrid(this)">
+                    <div class="proj-name-responsive">GE Healthcare: Know-Your-Customer</div>
+                    <img src="images/Illustrations/customers.png" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">GE Healthcare: Know-Your-Customer</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>KYC: </b></span>Front-end application to improve data access and
+                    management at GEHC.</p>
+            </div> -->
         </div>
         <div class="projectInfo-div" id="html-info">
             <br />
@@ -1079,80 +1099,241 @@
                 <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
             </div>
         </div>
-        <div class="projectInfo-div" id="se-info">
+        <div class="projectInfo-div" id="turntables-info">
             <br />
             <div class="info-div">
                 <div class="first-div">
+                    <!-- <div style="display: flex; flex-direction: column;"> -->
                     <div class="title">
-                        <h2>Tomatoz - Restaurant Management</h2><br />College &middot; Fullstack Development
+                        <h2>TurnTables</h2>
+                        <br />Research &middot; CS Education &middot; User Experience &middot;
+                        Gamified Learning &middot; Fullstack Development
                     </div>
                     <div class="description">
                         <h3 style="margin-bottom: 0.5%;">Description</h3>
-                        A brief intoduction to this project.
+                        <h4><b>What is AryaBota?</b></h4>
+                        ...
+                        <!-- AryaBota is a gradual and tolerant programming environment, for K-12 students to learn
+                        programming concepts. -->
+                        <br><br>
+                        <h4><b>Who is AryaBota for?</b></h4>
+                        ...
+                        <br><br>
+                        <h4 style="text-decoration: none;"><b>Live Prototype</b>:
+                            <u><a href="https://aryabota.vercel.app/" target="_blank" rel="noreferrer noopener"
+                                    style="font-weight: normal" class="links">
+                                    ...
+                                </a></u>
+                        </h4>
+                        <h4 style="text-decoration: none;"><b>GitHub Repository</b>:
+                            <u><a href="https://github.com/ab-apps" target="_blank" rel="noreferrer noopener"
+                                    style="font-weight: normal" class="links">
+                                    ...
+                                </a></u>
+                        </h4>
+                        <br>
+                        <i><b>Note:</b> A research paper detailing our initial findings and describing the tool has been
+                            accepted for publication at
+                            <b><a href="http://www.educon-conference.org/current/" target="_blank"
+                                    rel="noreferrer noopener" style="font-weight: normal" class="links">
+                                    IEEE EDUCON 2022
+                                </a></b>!</i>
+                        <!-- <br> -->
                     </div>
                 </div>
+                <!-- <div><img height="80%" src="images/Work/AryaBota/aryabota-logo.png"></div> -->
+                <!-- </div> -->
                 <br />
             </div>
             <div class="slideshow">
                 <div class="images-container">
                     <div class="mySlides5">
-                        <img src="images/Placeholders/bg3.jpg" style="width:100%">
-                        <div class="text">Caption One</div>
+                        <img src="images/Work/TurnTables/showcase.jpg" style="width:100%">
+                        <div class="text">TODO</div>
                     </div>
 
                     <div class="mySlides5">
-                        <img src="images/Placeholders/bg3.jpg" style="width:100%">
-                        <div class="text">Caption Two</div>
+                        <iframe src="https://vimeo.com/778240111">
+                        </iframe>
                     </div>
 
                     <div class="mySlides5">
-                        <img src="images/Placeholders/bg3.jpg" style="width:100%">
-                        <div class="text">Caption Three</div>
+                        <img src="images/Work/TurnTables/sketching.jpg" style="width:100%">
+                        <div class="text">TODO</div>
+                    </div>
+
+                    <div class="mySlides5">
+                        <img src="images/Work/TurnTables/systemdesign.jpg" style="width:100%">
+                        <div class="text">TODO</div>
+                    </div>
+
+                    <div class="mySlides5">
+                        <img src="images/Work/TurnTables/brainstorming.jpg" style="width:100%">
+                        <div class="text">TODO</div>
+                    </div>
+
+                    <div class="mySlides5">
+                        <img src="images/Work/TurnTables/ideation.jpg" style="width:100%">
+                        <div class="text">TODO</div>
+                    </div>
+
+                    <div class="mySlides5">
+                        <img src="images/Work/TurnTables/toolkit.jpg" style="width:100%">
+                        <div class="text">TODO</div>
+                    </div>
+
+                    <div class="mySlides5">
+                        <img src="images/Work/TurnTables/workflow.jpg" style="width:100%">
+                        <div class="text">TODO</div>
+                    </div>
+
+                    <div class="mySlides5">
+                        <img src="images/Work/TurnTables/zoomcall.jpg" style="width:100%">
+                        <div class="text">TODO</div>
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
                 </div>
                 <br>
-                <!-- <div style="text-align:center">
+                <div style="text-align:center">
                             <span class="dot" onclick="currentSlide(1)"></span>
                             <span class="dot" onclick="currentSlide(2)"></span>
                             <span class="dot" onclick="currentSlide(3)"></span>
-                        </div> -->
+                        </div>
             </div>
             <div class="details-div">
                 <div class="second-div">
                     <div>
                         <b>Project Context: </b>
-                        <ul>
-                            <li>OCt 2019 – Dec 2019</li>
-                            <li>PES University, Bangalore</li>
-                            <li>Team Size: 5</li>
-                        </ul>
+                        <div class="responsiveLists">
+                            <ul>
+                                <li>September - December 2022</li>
+                                <li>HCDE 518: User-Centered Design</li>
+                                <li>University of Washington</li>
+                                <li>Mentor: Sarah Coppola</li>
+                                <li>Team Size: 4</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="vr"></div>
                     <div>
                         <b>Roles & Responsibilities: </b>
                         <ul>
-                            <li>Project Planning</li>
-                            <li>Requirement Gathering</li>
-                            <li>Design Documentation</li>
-                            <li>UI Design</li>
-                            <li>Backend Development</li>
+                            <li>User Research</li>
+                            <li>Secondary Research</li>
+                            <li>Stakeholder Interviews</li>
+                            <li>UX Design & Development</li>
+                            <li>Prototyping</li>
+                            <li>Usability Testing</li>
                         </ul>
                     </div>
                     <div class="vr"></div>
                     <div>
                         <b>Tools/Methods Used: </b>
-                        <ul>
-                            <li>Firebase</li>
-                            <li>HTML5</li>
-                            <li>ES6</li>
-                        </ul>
+                        <div class="responsiveLists">
+                            <ul>
+                                <li>Storyboarding</li>
+                                <li>Scenario Testing</li>
+                                <li>Physical Prototyping</li>
+                                <li>Figma Prototyping</li>
+                            </ul>
+                            <ul>
+                                <li>Figjam</li>
+                                <li>Wizard of Oz Testing</li>
+                                <li>Observation</li>
+                                <li>Journey Mapping</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="third-div">
+                    <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
+                    <h4 style="margin: 0;">Team Members:</h4>
+                    Prerna Rao, Juan Flores, Emily Bascom, Ruoxi Li
+                    <br><br>
+                    <h4 style="margin: 0;"><u>Motivation</u></h4>
+                    <br><br>
+                    <h4 style="margin: 0;">Design Question</h4>
+                    <!-- <h3 style="margin: 0; font-weight: 400;"> -->
+                    <blockquote class="otro-blockquote">
+                        How might we generate an adaptive toolkit that can help transform a physical space to
+                        accommodate people with marginalized abilities?
+                    </blockquote>
+                    <!-- </h3> -->
+
+                    <br><br>
+                    <h4 style="margin: 0;">User and Pedagogy Research</h4>
+                    <div>
+                        ...
+
+                        <div class="details">
+                            <div class="details-text">
+                                <br>
+                                ...
+                            </div>
+                            <div>
+                                <img src="images/Work/AryaBota/Hedy-logo.png"
+                                    style="width: 30%; padding: 0 8%; height: fit-content;" alt="Hedy Logo" />
+                                <img src="images/Work/AryaBota/karel-maze.png"
+                                    style="width: 30%; padding: 0 8%; height: fit-content;" alt="Karel Maze" />
+                            </div>
+                        </div>
+                        <br>
+                        ...
+                    </div>
+                    <br>
+                    <!-- We researched existing pedagogical approaches to teaching introduction to programming. -->
+                    <h4>UI and UX Design</h4>
+                    <h5 style="margin: 0.5rem 0;">UX Design Process</h5>
+                    <div>
+                        ...
+                        <img src="images/Work/AryaBota/AryaBota_JourneyMap.jpg" width="100%"
+                            alt="Journey map in 4 phases: Explore, Solve, Revisit, Evaluate.">
+                        <!-- <img src="images/Work/AryaBota/aryabota-icon.jpeg" style="border-radius: 50%; padding: 0 8%; height: 5%;"/> -->
+                        <br>
+                        <h5 style="margin: 0.5rem 0;">UI Design Process</h5>
+                        <div>
+                            ...
+                            <br>
+                            <img src="images/Work/AryaBota/Wireframes.png" width="100%"
+                                alt="Wireframes over multiple iterations">
+                            <br><br>
+                            In its current stage, our UI consists of 3 main pages –
+                            ...
+                        </div>
+                        <br>
+                        <h4 style="margin: 0;">Formative Study and Testing</h4>
+                        <div>
+                            ...
+                            <br>
+                        </div>
+                        <br>
+                        <h4 style="margin: 0;">Feedback and Enhancements</h4>
+                        We received the following feedback from our interviews and surveys:
+                        <ul style="margin: 0;">
+                            <li>... ✅</li>
+                            ...
+                            <br><br>
+                            <h4 style="margin: 0;">Key Features</h4>
+                            <ol style="margin: 0;">
+                                <li>...</li>
+                            </ol>
+                            <!-- <h4 style="margin: 0;">Outcomes and Learnings</h4>
+                    TBA -->
+                            <br>
+                            <h4 style="margin: 0;">Current State</h4>
+                            <div>
+                                ...
+                            </div>
+                            <br>
+                            Do feel free to reach out to me if you would like to learn more about the current status of
+                            the
+                            tool, I'd love to chat with you about it!
+                    </div>
+                </div>
+
             </div>
-            <h3 style="text-align: left; margin-top: 0;">Project Details</h3>
         </div>
         <div class="projectInfo-div" id="volunteer-info">
             <br />
@@ -1160,7 +1341,8 @@
                 <div class="first-div">
                     <!-- <div style="display: flex; flex-direction: column;"> -->
                     <div class="title">
-                        <h2>Non-Profit Work</h2><br />Education &middot; Educational Technology &middot; Accessibility
+                        <h2>Non-Profit Work</h2><br />Education &middot; Educational Technology &middot;
+                        Accessibility
                         &middot; Inclusivity
                     </div>
                     <div class="description">
@@ -1171,10 +1353,12 @@
                         physical, socioeconomic, and cognitive needs.
                         <br><br>
                         <h4><b>Where do I work?</b></h4>
-                        At present, I am a member of the core team at <a class="links" href="https://sitaraakka.org/"
-                            target="_blank" rel="noreferrer noopener"><b>Sitara Akka Foundation</b></a>, a
+                        At present, I am a member of the core team at <a class="links"
+                            href="https://sitaraakka.org/" target="_blank" rel="noreferrer noopener"><b>Sitara Akka
+                                Foundation</b></a>, a
                         for-purpose, non-profit
-                        education/edTech organisation working with children from underserved communities in Karnataka,
+                        education/edTech organisation working with children from underserved communities in
+                        Karnataka,
                         India.
                         Prior to this, I was a student volunteer at <a class="links"
                             href="https://desiresociety.org/Default/Pages/Default.aspx" target="_blank"
@@ -1247,79 +1431,87 @@
                 </div>
                 <!-- <br> -->
                 <!-- <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div> -->
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div> -->
             </div>
             <div class="details-div">
                 <!-- <div class="second-div">
-                    <div>
-                        <b>Project Context: </b>
+                <div>
+                    <b>Project Context: </b>
+                    <ul>
+                        <li>Duration</li>
+                    </ul>
+                </div>
+                <div class="vr"></div>
+                <div>
+                    <b>Roles & Responsibilities: </b>
+                    <ul>
+                        <li>What did I do?</li>
+                    </ul>
+                </div>
+                <div class="vr"></div>
+                <div>
+                    <b>Tools/Methods Used: </b>
+                    <div class="responsiveLists">
                         <ul>
-                            <li>Duration</li>
+                            <li>Tools</li>
                         </ul>
                     </div>
-                    <div class="vr"></div>
-                    <div>
-                        <b>Roles & Responsibilities: </b>
-                        <ul>
-                            <li>What did I do?</li>
-                        </ul>
-                    </div>
-                    <div class="vr"></div>
-                    <div>
-                        <b>Tools/Methods Used: </b>
-                        <div class="responsiveLists">
-                            <ul>
-                                <li>Tools</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
+                </div>
+            </div> -->
                 <div class="third-div">
                     <h3
                         style="text-align: left; margin-top: 0; text-decoration: underline; text-underline-offset: 0.1em;">
                         Sitara Akka Foundation</h3>
                     <div>
                         <!-- <div class="details">
-                            <div class="details-text-volunteer"> -->
+                        <div class="details-text-volunteer"> -->
                         <h4 style="margin: 0; text-decoration: none;">STEM Teacher Instruction Kits</h4>
                         <span style="font-size: small;">Volunteer & Mentor &middot; May 2021 - Present</span>
                         <br>
                         I currently lead a special engagement where we focus on improving the quality of STEM
-                        education for students with visual impairments. Quite often, students with visual impairments in
+                        education for students with visual impairments. Quite often, students with visual
+                        impairments in
                         the state are discouraged from pursuing
                         STEM subjects beyond secondary school. A major reason behind this lopsided fact is that
                         textbooks for the visually impaired
-                        were visual in nature! Additionally, their teachers did not have the resources or bandwidth to
+                        were visual in nature! Additionally, their teachers did not have the resources or bandwidth
+                        to
                         create a
                         customized curriculum adapted to the needs of the children, or were visually impaired
                         themselves.
                         <!-- This resulted in a far more challenging learning process for the children. -->
                         To combat this, we are working closely with <b><a class="links"
-                                href="http://visionempowertrust.in/" target="_blank" rel="noreferrer noopener">Vision
+                                href="http://visionempowertrust.in/" target="_blank"
+                                rel="noreferrer noopener">Vision
                                 Empower Trust</a></b> to create <b>Teacher-Instruction-Kits</b> (TIKs) or
                         <b>manuals
-                            that assist teachers in delivering complex visual concepts using accessible materials and
+                            that assist teachers in delivering complex visual concepts using accessible materials
+                            and
                             methods</b>.
-                        Vision Empower (VE) Trust is a not-for-profit organisation that empowers children with visual
+                        Vision Empower (VE) Trust is a not-for-profit organisation that empowers children with
+                        visual
                         impairments, through inclusive education.
                         <!-- </div>
-                            <div>
-                                <img src="images/Illustrations/GoodTeam.png" class="inline-image" />
-                            </div> -->
+                        <div>
+                            <img src="images/Illustrations/GoodTeam.png" class="inline-image" />
+                        </div> -->
                         <!-- </div> -->
                         <br><br>
                         <div class="details">
                             <div class="details-text-volunteer">
                                 <!-- <br> -->
-                                I first worked as a volunteer to create TIKs for the grade 8 Math Syllabus, and am now
+                                I first worked as a volunteer to create TIKs for the grade 8 Math Syllabus, and am
+                                now
                                 leading the engagement for the grade 8-10 Math and Science curriculum for multiple
                                 states. Here, we
-                                brainstorm and document thought-experiments, or touch-feel, and sound based activities
+                                brainstorm and document thought-experiments, or touch-feel, and sound based
+                                activities
                                 to explain the various concepts covered in the textbooks. Additionally, we conduct
-                                internal reviews, with feedback from Vision Empower experts, to analyze the feasibility
+                                internal reviews, with feedback from Vision Empower experts, to analyze the
+                                feasibility
                                 of activities from the teacher's perspective.
                             </div>
                             <div>
@@ -1337,12 +1529,14 @@
 
                             In this 21st Century, it is (of course) important for all citizens to have strong 21st
                             Century Skills. As described by the Microsoft's 21CLD program, these skills include –
-                            collaboration, communication, knowledge construction, self-regulation, problem-solving and
+                            collaboration, communication, knowledge construction, self-regulation, problem-solving
+                            and
                             innovation, and the use of ICT for learning.
                             Through our diverse curricula and engagements at Sitara Akka, we wish to help our
                             students inculcate these skills as well.
                             <br>
-                            To this end, we conducted research on how to measure the impact of our current pedagogical
+                            To this end, we conducted research on how to measure the impact of our current
+                            pedagogical
                             practices on students’ 21st Century Skills. I worked on designing and testing a learning
                             structure that incorporated these critical skills, as well as methods for the educator
                             to evaluate them.
@@ -1352,22 +1546,24 @@
                         </div>
                     </div>
                     <!-- To this end, we conducted research on how to measure the impact of our current pedagogical
-                    practices on students’ 21st Century Skills. I worked on designing and testing a learning
-                    structure that incorporated these critical skills, as well as methods for the educator
-                    to evaluate them. -->
+                practices on students’ 21st Century Skills. I worked on designing and testing a learning
+                structure that incorporated these critical skills, as well as methods for the educator
+                to evaluate them. -->
                     <br><br>
                     <div class="details">
                         <div class="details-text-volunteer">
                             <h4 style="margin: 0;">Curriculum Research Mentor</h4>
                             <!-- <span style="font-size: small;">Mentor &middot; June - July 2021</span> <br> -->
                             <div>
-                                In wake of the Covid-19 pandemic, various underserved communities in India lost access
+                                In wake of the Covid-19 pandemic, various underserved communities in India lost
+                                access
                                 to education due to
                                 a lack of resources to access online learning. To bridge this, Sitara Akka created a
                                 localized Math EdTech series
                                 in order to provide accessible, affordable education to these students.
                                 <br>
-                                Seeing the success and impact of the Math series, we are launching a Science series as
+                                Seeing the success and impact of the Math series, we are launching a Science series
+                                as
                                 well!
                                 For this, I mentored a team of volunteers in an effort to research and create a
                                 curriculum to be delivered via
@@ -1392,15 +1588,18 @@
                             <div>
                                 In my first role at Sitara Akka, in January 2019, I tutored and guided high school
                                 students at <b><a class="links"
-                                        href="https://instagram.com/surabhitrust?igshid=qzyl98u9ryt1" target="_blank"
-                                        rel="noreferrer noopener">Surabhi Trust's Tirtha Ashrama</a></b>
+                                        href="https://instagram.com/surabhitrust?igshid=qzyl98u9ryt1"
+                                        target="_blank" rel="noreferrer noopener">Surabhi Trust's Tirtha
+                                        Ashrama</a></b>
                                 through their English and Math courses, in coordination with <a class="links"
                                     href="https://instagram.com/mangalametri?utm_medium=copy_link" target="_blank"
                                     rel="noreferrer noopener">Mangala Ma'am</a>. These were students studying an
                                 English-based
-                                curriculum while having a minimal grasp of the language. To help them learn effectively,
+                                curriculum while having a minimal grasp of the language. To help them learn
+                                effectively,
                                 I taught them their English Syllabus in Kannada. In fact, this engagement grew to be
-                                rather multifaceted – not only did the children gain a meaningful education, but also
+                                rather multifaceted – not only did the children gain a meaningful education, but
+                                also
                                 built curiosity, motivation, and the desire to
                                 learn.
                             </div>
@@ -1424,11 +1623,13 @@
                         Desire Society</h3>
                     <div class="details">
                         <div class="details-text-volunteer">
-                            I volunteered with Desire Society, an organisation responsible for the care and well-being
+                            I volunteered with Desire Society, an organisation responsible for the care and
+                            well-being
                             of children affected with HIV/AIDS, for close to 1.5 years back in 2014.
                             I would visit the children twice a week and interact with different age groups on a need
                             basis. On alternate visits I would conduct either Math, Science, and English lessons, or
-                            engage the children in games or other extra-curricular activities to encourage interaction
+                            engage the children in games or other extra-curricular activities to encourage
+                            interaction
                             and foster curiosity.
                         </div>
                         <div>
@@ -1436,7 +1637,8 @@
                         </div>
                     </div>
                     <br><br>
-                    Do feel free to reach out to me if you would like to contribute to or learn more about the work we
+                    Do feel free to reach out to me if you would like to contribute to or learn more about the work
+                    we
                     do at Sitara Akka Foundation, I'd love to chat with you about it!
                 </div>
             </div>
@@ -1445,7 +1647,6 @@
             <br /><a class="pageLinks-light">Go back to all projects</a><br /><br />
         </div>
         <button onclick="goToTop()" id="goToTop" title="Go to top">⬆</button>
-    </div>
     </div>
     </div>
     <footer class="footer">
