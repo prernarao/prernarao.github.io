@@ -342,6 +342,20 @@ h2 {
     right: 10%;
 }
 
+#redirect {
+    font-weight: normal;
+    color: #1772d0;
+    text-decoration: none;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: large;
+}
+
+#redirect:hover {
+    font-weight: normal;
+    color: #1772d0;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 760px) {
     .headerIcons-div a {
         display: none;
