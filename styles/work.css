@@ -203,10 +203,24 @@ body {
     margin-top: 20px;
 }
 
+#redirect {
+    font-weight: normal;
+    color: #1772d0;
+    text-decoration: none;
+}
+
+#redirect:hover {
+    font-weight: normal;
+    color: #1772d0;
+    text-decoration: underline;
+}
+
 .links {
     text-decoration: none;
     color: #1772d0;
 }
+
+
 /* .linkedin:hover{
     color: #0072B1;
 }
