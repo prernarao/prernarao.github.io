@@ -1,4 +1,4 @@
-# https://prernarao.github.io/
+# https://prernarao.com/
 
 Hello! Thanks for looking here :)
 
