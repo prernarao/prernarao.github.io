@@ -22,7 +22,8 @@ body {
 }
 
 .header {
-    padding: 25px 25px 0px 20px;
+    /* padding: 25px 25px 0px 20px; */
+    padding: 25px 10% 0 10%;
     height: 10%;
     font-size: 30px;
     display: flex;
@@ -224,7 +225,8 @@ body {
 
 .content {
     display: flex;
-    padding: 6%;
+    /* padding: 6%; */
+    padding: 3% 10% 3% 10%;
     /* margin: auto; */
     justify-content: space-between;
 }

@@ -40,7 +40,8 @@ h2 {
 }
 
 .header {
-    padding: 25px 25px 0px 20px;
+    /* padding: 25px 25px 0px 20px; */
+    padding: 25px 10% 0 10%;
     height: 10%;
     font-size: 30px;
     display: flex;
@@ -99,7 +100,23 @@ h2 {
     font-weight: 600;
 }
 
-.sitara:hover, .sitara-dark:hover, .gehc:hover, .gehc-dark:hover, .uw:hover, .uw-dark:hover {
+.by {
+    font-family: "Josefin Slab", Georgia, sans-serif;
+    text-decoration: none;
+    color: #008ddf;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.by-dark {
+    font-family: "Josefin Slab", Georgia, sans-serif;
+    text-decoration: none;
+    color: #4eb6f1;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.sitara:hover, .sitara-dark:hover, .gehc:hover, .gehc-dark:hover, .uw:hover, .uw-dark:hover, .by:hover, .by-dark:hover {
     text-decoration: underline;
     text-underline-offset: 0.1em;
 }
@@ -190,6 +207,7 @@ h2 {
 .content {
     display: flex;
     justify-content: space-between;
+    padding: 0 10% 3% 10%;
 }
 
 .content .intro-div {

@@ -28,6 +28,7 @@ function changeDisplayMode() {
         document.getElementsByClassName("sitara")[0].className = "sitara-dark";
         // document.getElementsByClassName("gehc")[0].className = "gehc-dark";
         document.getElementsByClassName("uw")[0].className = "uw-dark";
+        document.getElementsByClassName("by")[0].className = "by-dark";
         document.getElementsByClassName("icon")[0].className = "icon-dark";
         document.getElementsByClassName("icon")[0].className = "icon-dark";
         document.getElementsByClassName("icon")[0].className = "icon-dark";
@@ -56,6 +57,7 @@ function changeDisplayMode() {
         document.getElementsByTagName("h2")[0].className = "hello-light";
         document.getElementsByClassName("comic")[0].src = "images/comic-nobg.png";
         document.getElementsByClassName("sitara-dark")[0].className = "sitara";
+        document.getElementsByClassName("by-dark")[0].className = "by";
         // document.getElementsByClassName("gehc-dark")[0].className = "gehc";
         document.getElementsByClassName("uw-dark")[0].className = "uw";
         document.getElementsByClassName("icon-dark")[0].className = "icon";
