@@ -98,23 +98,55 @@
         </div>
     </div>
     <div class="gallery" id="gallery" onclick="closeMenu()">
-        <h3 id="top-div">Selected Work</h3>
-        <h2><a id="redirect" href="https://curly-fry.notion.site/Prerna-Rao-44cd0cdcdf97454da72ac0d2ab874849?pvs=4" target="_blank" rel="noreferrer noopener" class="redirect">🪄 You can find the latest version of my work here, on Notion</a></h2>
+        <h2 id="top-div">Selected Work</h2>
+        <h3 style="margin-bottom: -0.5em;"><a id="redirect"
+                href="https://curly-fry.notion.site/Prerna-Rao-44cd0cdcdf97454da72ac0d2ab874849?pvs=4" target="_blank"
+                rel="noreferrer noopener" class="redirect">*click here for more details on notion.</a>
+        </h3>
+        <p class="p-light" style="font-size: smaller;">Note: I have been updating Notion more regularly than this
+            website</p>
+        <!-- <h2><a id="redirect" href="https://curly-fry.notion.site/Prerna-Rao-44cd0cdcdf97454da72ac0d2ab874849?pvs=4" target="_blank" rel="noreferrer noopener" class="redirect">🪄 You can find the latest version of Case Studies here, on Notion</a></h2> -->
         <div onclick="showGrid()" id="backToGrid" class="buttons" style="display: none;">
             <br /><a class="pageLinks-light">All Projects</a><br />
         </div>
         <div class="image-grid" id="image-grid">
             <div class="column">
-                <div class="container" id="turntables">
+                <!-- <div class="container" id="turntables">
                     <div class="proj-name-responsive">TurnTables</div>
                     <img src="images/Illustrations/TurnTables.png" alt="TurnTables" style="width:100%;">
                     <div class="middle">
                         <div class="proj-name">TurnTables: Coming Soon!</div>
                     </div>
+                </div> -->
+                <!-- <p><span class="proj-name-large"><b>TurnTables: </b></span>Coming Soon!</p> -->
+                <div class="container" id="liaam" onclick="hideGrid(this)">
+                    <div class="proj-name-responsive">Identity & Access</div>
+                    <img src="images/Work/BY/Luminate_Portal.jpg" alt="Identity & Access" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">Identity & Access</div>
+                    </div>
                 </div>
-                <p><span class="proj-name-large"><b>TurnTables: </b></span>Coming Soon!</p>
+                <p><span class="proj-name-large"><b>Identity & Access: </b></span>Coming Soon!</p>
                 <br />
-                <div class="container" id="volunteer" onclick="hideGrid(this)">
+                <div class="container" id="github">
+                    <div class="proj-name-responsive">GitHub</div>
+                    <img src="images/Work/GitHub/GitHub_Generic.jpg" alt="GitHub" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">GitHub</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>GitHub: </b></span>Coming Soon!</p>
+                <br />
+                <div class="container" id="romance">
+                    <div class="proj-name-responsive">Romance</div>
+                    <img src="images/Work/Romance/image.jpg" alt="Romance" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">Romance</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>Romance: </b></span>Coming Soon!</p>
+                <br />
+                <!-- <div class="container" id="volunteer" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">Education & EdTech</div>
                     <img src="images/Illustrations/volunteer.png" style="width:100%;">
                     <div class="middle">
@@ -122,8 +154,8 @@
                     </div>
                 </div>
                 <p><span class="proj-name-large"><b>Education & EdTech: </b></span>Provision of inclusive and accessible
-                    education to underserved communities</p>
-                <br />
+                    education to underserved communities</p> -->
+                <!-- <br />
                 <div class="container" id="zfp" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">GE Healthcare: Zero Footprint Viewer</div>
                     <img src="images/Illustrations/medical.png" style="width:100%;">
@@ -132,12 +164,30 @@
                     </div>
                 </div>
                 <p><span class="proj-name-large"><b>Zero Footprint Viewer: </b></span>Ubiquitous web application to
-                    view/manipulate clinical images</p>
+                    view/manipulate clinical images</p> -->
             </div>
             <div class="column">
+                <div class="container" id="sitaraweb" onclick="hideGrid(this)">
+                    <div class="proj-name-responsive">Sitara Web</div>
+                    <img src="images/Work/SitaraWeb/Sitara Poster.jpg" alt="TurnTables" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">Sitara Web</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>Sitara Web: </b></span>Coming Soon!</p>
+                <br />
+                <div class="container" id="sony">
+                    <div class="proj-name-responsive">Sony</div>
+                    <img src="images/Work/Sony/Bravia_Bg.avif" alt="Sony" style="width:100%;">
+                    <div class="middle">
+                        <div class="proj-name">Sony</div>
+                    </div>
+                </div>
+                <p><span class="proj-name-large"><b>Sony: </b></span>Coming Soon!</p>
+                <br />
                 <div class="container" id="ab" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">AryaBota</div>
-                    <img src="images/Illustrations/pair.png" style="width:100%;">
+                    <img src="images/Work/AryaBota/coverGIF.gif" style="width:100%;">
                     <div class="middle">
                         <div class="proj-name">AryaBota</div>
                     </div>
@@ -145,7 +195,7 @@
                 <p><span class="proj-name-large"><b>AryaBota: </b></span>Gradual programming environment to teach
                     programming concepts through level-wise puzzles</p>
                 <br />
-                <div class="container" id="html" onclick="hideGrid(this)">
+                <!-- <div class="container" id="html" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">Sketch2HTML</div>
                     <img src="images/Illustrations/prototype.png" alt="Sketch2HTML" style="width:100%;">
                     <div class="middle">
@@ -153,9 +203,9 @@
                     </div>
                 </div>
                 <p><span class="proj-name-large"><b>Sketch2HTML: </b></span>Web application to convert a hand-drawn
-                    wireframe into a downloadable HTML webpage</p>
-                <br />
-                <div class="container" id="kyc" onclick="hideGrid(this)">
+                    wireframe into a downloadable HTML webpage</p> -->
+                <!-- <br /> -->
+                <!-- <div class="container" id="kyc" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">GE Healthcare: Know-Your-Customer</div>
                     <img src="images/Illustrations/customers.png" style="width:100%;">
                     <div class="middle">
@@ -163,21 +213,20 @@
                     </div>
                 </div>
                 <p><span class="proj-name-large"><b>KYC: </b></span>Front-end application to improve data access and
-                    management at GEHC.</p>
+                    management at GEHC.</p> -->
 
             </div>
-            <!-- <div class="column">
-                <div class="container" id="kyc" onclick="hideGrid(this)">
-                    <div class="proj-name-responsive">GE Healthcare: Know-Your-Customer</div>
-                    <img src="images/Illustrations/customers.png" style="width:100%;">
+            <div class="column">
+                <div class="container" id="icer" onclick="hideGrid(this)">
+                    <div class="proj-name-responsive">ICER</div>
+                    <img src="images/Work/ICER/LitReview_Cover.jpg" style="width:100%;">
                     <div class="middle">
-                        <div class="proj-name">GE Healthcare: Know-Your-Customer</div>
+                        <div class="proj-name">ICER Lit Review</div>
                     </div>
                 </div>
-                <p><span class="proj-name-large"><b>KYC: </b></span>Front-end application to improve data access and
-                    management at GEHC.</p>
+                <p><span class="proj-name-large"><b>ICER: </b></span>Coming soon.</p>
 
-                <div class="container" id="se" onclick="hideGrid(this)">
+                <!-- <div class="container" id="se" onclick="hideGrid(this)">
                     <div class="proj-name-responsive">GE Healthcare: Know-Your-Customer</div>
                     <img src="images/Illustrations/customers.png" style="width:100%;">
                     <div class="middle">
@@ -185,8 +234,65 @@
                     </div>
                 </div>
                 <p><span class="proj-name-large"><b>KYC: </b></span>Front-end application to improve data access and
-                    management at GEHC.</p>
-            </div> -->
+                    management at GEHC.</p> -->
+            </div>
+        </div>
+        <div class="projectInfo-div" id="liaam-info">
+            <br />
+            <div class="info-div">
+                <div class="first-div">
+                    <div class="title">
+                        <h2>ICER</h2>
+                        <br />Front-End Development &middot; UI/UX
+                        &middot; Software Engineering &middot; Data Management
+                    </div>
+                    <div class="description">
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
+                        <h4><b>What is ICER?</b></h4>
+                        <br>
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="slideshow">
+                <div class="images-container">
+                    <div class="mySlides3">
+                        <img src="images/Work/BY/ScreenRecording-20240421_165646-MeetingRecording-ezgif.com-video-to-gif-converter.gif" style="width:100%">
+                        <div class="text">Improving access to customer data at GEHC</div>
+                    </div>
+                    <!-- <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a> -->
+                </div>
+                <br>
+            </div>
+            <div class="details-div">
+                <div class="second-div">
+                </div>
+                <div class="third-div">
+                </div>
+            </div>
+
+        </div>
+        <div class="projectInfo-div" id="sitaraweb-info">
+            
+            <div class="slideshow">
+                <div class="images-container">
+                    <div class="mySlides3">
+                        <img src="images/Work/SitaraWeb/Sitara Illustration.webp" style="width:100%">
+                        <div class="text">Improving access to customer data at GEHC</div>
+                    </div>
+                    <!-- <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a> -->
+                </div>
+                <br>
+            </div>
+            <div class="details-div">
+                <div class="second-div">
+                </div>
+                <div class="third-div">
+                </div>
+            </div>
+
         </div>
         <div class="projectInfo-div" id="html-info">
             <br />
@@ -1027,6 +1133,42 @@
                         <li>I learnt how to implement software engineering principles, particularly Agile methodologies,
                             when developing a software product.</li>
                     </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="projectInfo-div" id="icer-info">
+            <br />
+            <div class="info-div">
+                <div class="first-div">
+                    <div class="title">
+                        <h2>ICER</h2>
+                        <br />Front-End Development &middot; UI/UX
+                        &middot; Software Engineering &middot; Data Management
+                    </div>
+                    <div class="description">
+                        <h3 style="margin-bottom: 0.5%;">Description</h3>
+                        <h4><b>What is ICER?</b></h4>
+                        <br>
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="slideshow">
+                <div class="images-container">
+                    <div class="mySlides3">
+                        <img src="images/Placeholders/KYC-STOCK.jpg" style="width:100%">
+                        <div class="text">Improving access to customer data at GEHC</div>
+                    </div>
+                    <!-- <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a> -->
+                </div>
+                <br>
+            </div>
+            <div class="details-div">
+                <div class="second-div">
+                </div>
+                <div class="third-div">
                 </div>
             </div>
 

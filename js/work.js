@@ -52,6 +52,12 @@ function showGrid() {
     document.getElementById("turntables-info").style.display = "none";
     document.getElementById("ab-info").style.display = "none";
     document.getElementById("volunteer-info").style.display = "none";
+    document.getElementById("icer-info").style.display = "none";
+    document.getElementById("liaam-info").style.display = "none";
+    document.getElementById("sony-info").style.display = "none";
+    document.getElementById("romance-info").style.display = "none";
+    document.getElementById("github-info").style.display = "none";
+    document.getElementById("sitaraweb-info").style.display = "none";
 }
 
 function changeDisplayMode() {
